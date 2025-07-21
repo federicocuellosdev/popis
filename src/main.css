@@ -66,6 +66,7 @@ body {
     transition: all 0.5s ease;
     font-family: 'quicksand medium', sans-serif !important;
     color: var(--color-texto);
+    font-size: 1rem;
 }
 
 .principal .botones button:hover {
