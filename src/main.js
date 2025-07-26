@@ -667,7 +667,7 @@ const menu_cargar = () => {
 
             const precio = document.createElement('p')
             precio.className = 'menu_item_precio'
-            precio.textContent = `${item.precio}€`
+            precio.textContent = `${item.precio} €`
 
             itemP.appendChild(nombre)
             itemP.appendChild(precio)
