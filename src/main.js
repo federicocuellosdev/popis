@@ -1,8 +1,9 @@
 // Título principal dinámico
 const palabras = [
     'Bienvenido',   // Español
-    'Benvenuto',    // Italiano
+    'Benvinguts',   // Catalan
     'Welcome',      // Inglés
+    'Benvenuto',    // Italiano
     'Willkommen',   // Alemán
     'Bienvenue'     // Francés
 ]
