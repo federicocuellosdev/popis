@@ -627,8 +627,8 @@ const menu_cargar = () => {
 
     const titulos = {
         es: 'Menú en español',
-        en: 'Menú en inglés',
-        cat: 'Menú en catalán'
+        en: 'Menu in English',
+        cat: 'Menú en català'
     }
     document.querySelector('#menu_titulo').textContent = titulos[idioma] || 'Menú'
 
