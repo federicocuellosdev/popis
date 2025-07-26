@@ -17,9 +17,9 @@
             <h2 id="typing"></h2>
 
             <div class="botones">
-                <button>Menú en Español</button>
-                <button>Menu in English</button>
-                <button>Menu em Português</button>
+                <button onclick="menu('es')">Menú en Español</button>
+                <button onclick="menu('en')">Menu in English</button>
+                <button onclick="menu('cat')">Menu em Português</button>
 
             </div>
             <a href="https://maps.app.goo.gl/12NpFujeuTSc6AAb8">Carrer del Torrent de l'Olla, 94, Gràcia,
@@ -30,50 +30,8 @@
         </div>
     </section>
 
-    <script>
-        const palabras = [
-            'Bienvenido',   // Español
-            'Benvenuto',    // Italiano
-            'Welcome',      // Inglés
-            'Willkommen',   // Alemán
-            'Bienvenue'     // Francés
-        ];
-
-        let palabraIndex = 0;
-        let letraIndex = 0;
-        const velocidad = 150; // velocidad de tipeo
-        const pausaEntrePalabras = 1500;
-
-        const typingElement = document.getElementById('typing');
-
-        function tipear() {
-            if (letraIndex < palabras[palabraIndex].length) {
-                typingElement.textContent += palabras[palabraIndex].charAt(letraIndex);
-                letraIndex++;
-                setTimeout(tipear, velocidad);
-            } else {
-                // Pausa y luego borrar para la siguiente palabra
-                setTimeout(() => {
-                    borrar();
-                }, pausaEntrePalabras);
-            }
-        }
-
-        function borrar() {
-            if (letraIndex > 0) {
-                typingElement.textContent = palabras[palabraIndex].substring(0, letraIndex - 1);
-                letraIndex--;
-                setTimeout(borrar, velocidad / 2);
-            } else {
-                // Siguiente palabra
-                palabraIndex = (palabraIndex + 1) % palabras.length;
-                setTimeout(tipear, velocidad);
-            }
-        }
-
-        tipear();
-    </script>
-
+    <script src="./src/main.js"></script>
+    <script>tipear()</script>
 </body>
 
 </html>
