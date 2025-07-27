@@ -1,6 +1,6 @@
 :root {
     --color-primario: #B62423;
-    --color-fondo: #F4EEE9;
+    --color-blanco: #ffffff;
     --color-texto: #333333;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .contenedor {
-    max-width: 450px;
+    max-width: 850px;
     margin: auto;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .principal h2 {
-    color: var(--color-fondo);
+    color: var(--color-blanco);
     height: 50px;
     font-size: 3rem;
 }
@@ -69,7 +69,7 @@ body {
     margin: 20px;
     padding: 20px 25px;
     border-radius: 100px;
-    border: 1px solid var(--color-fondo);
+    border: 1px solid var(--color-blanco);
     width: 100%;
     transition: all 0.5s ease;
     font-family: 'quicksand medium', sans-serif !important;
@@ -84,7 +84,7 @@ body {
 }
 
 .principal a {
-    color: var(--color-fondo);
+    color: var(--color-blanco);
     text-decoration: none;
     font-family: 'quicksand medium', sans-serif !important;
 }
@@ -102,12 +102,12 @@ body {
 
 .menu {
     font-family: 'tt chocolate', sans-serif !important;
-    color: var(--color-fondo);
+    color: var(--color-blanco);
     padding: 20px;
 }
 
 .menu .menu_categoria h3 {
-    color: var(--color-fondo);
+    color: var(--color-blanco);
     font-size: 2.5rem;
     line-height: 3.3rem;
     font-weight: 800;
@@ -119,6 +119,7 @@ body {
 
 .menu .menu_categoria_item {
     margin: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.314);
 }
 
 .menu .menu_categoria_item_p p {
@@ -135,4 +136,8 @@ body {
 .menu .menu_categoria_item_d {
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+.menu .menu_item_descripcion {
+    margin-top: 5px;
 }
