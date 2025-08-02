@@ -76,6 +76,7 @@ const menu_seleccion = (idioma) => {
     en: "What menu would you like to see?"
   };
   document.getElementById('typing').textContent = titulos[idioma]
+  document.getElementById('typing').style.height = 'auto'
 
 }
 
