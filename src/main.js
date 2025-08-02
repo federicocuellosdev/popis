@@ -35,7 +35,7 @@ const typingElement = document.getElementById('typing')
 
 // Home
 function tipear() {
-  if (sessionStorage.getItem('menu')) {
+  if (sessionStorage.getItem('idioma')) {
     return
   }
 
@@ -52,7 +52,7 @@ function tipear() {
 }
 
 function borrar() {
-  if (sessionStorage.getItem('menu')) {
+  if (sessionStorage.getItem('idioma')) {
     return
   }
   if (letraIndex > 0) {
@@ -75,23 +75,26 @@ const menu_seleccion = (idioma) => {
   document.getElementById('typing').textContent = titulos[idioma]
   document.getElementById('typing').style.height = 'auto'
   document.getElementById('typing').style.overflow = 'none'
-  document.getElementById('typing').padding = '0'
-  document.getElementById('typing').paddingBottom = '0'
+  document.getElementById('typing').style.paddingBottom = '0'
 
 }
 
 const menu = (v, c) => {
   if ('menu' === c) {
     sessionStorage.removeItem('local')
-    sessionStorage.setItem('menu', v)
+    sessionStorage.setItem('idioma', v)
     document.querySelector('#menu-idioma').classList.add('hide')
     document.querySelector('#menu-local').classList.remove('hide')
 
-    const idioma = sessionStorage.getItem('menu') || 'es'
+    const idioma = sessionStorage.getItem('idioma') || 'es'
     menu_seleccion(idioma)
 
+    // Remuevo la Direccion
+    if (document.querySelector('#direccion')) {
+      document.querySelector('#direccion').remove()
+    }
+
     // Cambiar los títulos de los botones según el idioma
-    document.querySelector('#direccion').remove()
     document.querySelector('#menu-local-focacceria').textContent = locales_nombres[idioma].focacceria;
     document.querySelector('#menu-local-bolleria').textContent = locales_nombres[idioma].bolleria;
   }
@@ -101,14 +104,22 @@ const menu = (v, c) => {
   }
 
   // Si no se ha seleccionado el idioma o el local, redirigir
-  if (sessionStorage.getItem('menu') && sessionStorage.getItem('local')) {
-    window.location.href = './menu.html?v=' + sessionStorage.getItem('menu') + '&c=' + sessionStorage.getItem('local');
+  if (sessionStorage.getItem('idioma') && sessionStorage.getItem('local')) {
+    window.location.href = './menu.html?v=' + sessionStorage.getItem('idioma') + '&c=' + sessionStorage.getItem('local');
   }
 }
 
 const recarga = () => {
+  const bienbenido = {
+    es: "Bienvenido",
+    cat: "Benvinguts",
+    en: "Welcome"
+  }
+  document.querySelector("#typing").textContent = bienbenido[sessionStorage.getItem('idioma')]
+  document.querySelector("#typing").style.paddingBottom = '0'
+  document.querySelector("#menu-local").classList.add('hide')
+  document.querySelector("#menu-idioma").classList.remove('hide')
   sessionStorage.clear()
-  location.reload()
 }
 
 // Menu
