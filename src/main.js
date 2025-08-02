@@ -74,6 +74,8 @@ const menu_seleccion = (idioma) => {
   };
   document.getElementById('typing').textContent = titulos[idioma]
   document.getElementById('typing').style.height = 'auto'
+  document.getElementById('typing').style.overflow = 'auto'
+  document.getElementById('typing').padding = '0'
 
 }
 
