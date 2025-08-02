@@ -106,6 +106,11 @@ const menu = (v, c) => {
   }
 }
 
+const recarga = () => {
+  sessionStorage.clear()
+  location.reload()
+}
+
 // Menu
 const menu_datos = [
   {
