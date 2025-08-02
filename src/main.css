@@ -62,8 +62,11 @@ body {
 
 .principal h2 {
     color: var(--color-blanco);
-    height: 50px;
+    height: 60px;
+    line-height: 60px;
+    padding-bottom: 60px;
     font-size: 3rem;
+    overflow: hidden;
 }
 
 .principal .botones {

@@ -36,12 +36,6 @@ const typingElement = document.getElementById('typing')
 // Home
 function tipear() {
   if (sessionStorage.getItem('menu')) {
-    const bienvenido = {
-      es: "Bienvenido",
-      cat: "Benvinguts",
-      en: "Welcome"
-    }
-    document.getElementById('typing').textContent = bienvenido[sessionStorage.getItem('menu')]
     return
   }
 
@@ -58,6 +52,9 @@ function tipear() {
 }
 
 function borrar() {
+  if (sessionStorage.getItem('menu')) {
+    return
+  }
   if (letraIndex > 0) {
     typingElement.textContent = palabras[palabraIndex].substring(0, letraIndex - 1)
     letraIndex--
