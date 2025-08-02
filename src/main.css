@@ -190,4 +190,5 @@ body {
 
 #direccion hr {
     margin: 30px 0;
+    border: 1px solid var(--color-blanco);
 }
