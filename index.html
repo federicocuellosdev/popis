@@ -16,17 +16,29 @@
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
             <h2 id="typing"></h2>
 
-            <div class="botones">
-                <button onclick="menu('es')">Menú en Español</button>
-                <button onclick="menu('en')">Menu in English</button>
-                <button onclick="menu('cat')">Menú en Català</button>
-
+            <div class="botones" id="menu-idioma">
+                <button onclick="menu('es','menu')">Menú en Español</button>
+                <button onclick="menu('en','menu')">Menu in English</button>
+                <button onclick="menu('cat','menu')">Menú en Català</button>
             </div>
-            <a href="https://maps.app.goo.gl/12NpFujeuTSc6AAb8"><b>FOCACCERÍA</b> | Carrer del Torrent de l'Olla, 94, Gràcia,
-                08012 Barcelona, España | Google Maps ➚</a>
-            <br>
-            <a href="https://maps.app.goo.gl/URNXex1QkYSHWfvt5"><b>BOLLERÍA</b> | Carrer de Puigmartí, 2, Gràcia, 08012
-                Barcelona, España | Google Maps ➚</a>
+            <div class="botones hide" id="menu-local">
+                <button onclick="menu('focacceria','local')" id="menu-local-focacceria">Focacceria de Carne
+                    Ahumada</button>
+                <button onclick="menu('bolleria','local')" id="menu-local-bolleria">Specialty Coffe & Bakery</button>
+            </div>
+
+            <div id="direccion">
+                <a href="https://maps.app.goo.gl/12NpFujeuTSc6AAb8"><b>Focacceria de Carne Ahumada</b> | Carrer del
+                    Torrent
+                    de l'Olla, 94, Gràcia,
+                    08012 Barcelona, España | Google Maps ➚</a>
+                <br>
+                <a href="https://maps.app.goo.gl/URNXex1QkYSHWfvt5"><b>Specialty Coffe & Bakery</b> | Carrer de
+                    Puigmartí,
+                    2, Gràcia, 08012
+                    Barcelona, España | Google Maps ➚</a>
+            </div>
+            
             <img id="popis-letras" src="./src/img/popis-letras.svg"
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
 

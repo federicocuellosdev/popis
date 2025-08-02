@@ -1,12 +1,30 @@
 // Título principal dinámico
 const palabras = [
-    'Bienvenido',   // Español
-    'Benvinguts',   // Catalan
-    'Welcome',      // Inglés
-    'Benvenuto',    // Italiano
-    'Willkommen',   // Alemán
-    'Bienvenue'     // Francés
+  'Bienvenido',   // Español
+  'Benvinguts',   // Catalan
+  'Welcome',      // Inglés
+  'Benvenuto',    // Italiano
+  'Willkommen',   // Alemán
+  'Bienvenue'     // Francés
 ]
+
+const locales_nombres = {
+  es: {
+    focacceria: "Focacceria de carne ahumada",
+    bolleria: "Café de especialidad y panadería",
+    todo: "Focacceria de carne ahumada & Café de especialidad y panadería"
+  },
+  cat: {
+    focacceria: "Focacceria de carn fumada",
+    bolleria: "Cafè d'especialitat i fleca",
+    todo: "Focacceria de carn fumada & Cafè d'especialitat i fleca"
+  },
+  en: {
+    focacceria: "Smoked Meat Focacceria",
+    bolleria: "Specialty Coffee and Bakery",
+    todo: "Smoked Meat Focacceria & Specialty Coffee and Bakery"
+  }
+}
 
 let palabraIndex = 0
 let letraIndex = 0
@@ -15,38 +33,79 @@ const pausaEntrePalabras = 1500
 
 const typingElement = document.getElementById('typing')
 
+// Home
 function tipear() {
-    if (letraIndex < palabras[palabraIndex].length) {
-        typingElement.textContent += palabras[palabraIndex].charAt(letraIndex)
-        letraIndex++
-        setTimeout(tipear, velocidad)
-    } else {
-        // Pausa y luego borrar para la siguiente palabra
-        setTimeout(() => {
-            borrar()
-        }, pausaEntrePalabras)
+  if (sessionStorage.getItem('menu')) {
+    const bienvenido = {
+      es: "Bienvenido",
+      cat: "Benvinguts",
+      en: "Welcome"
     }
+    document.getElementById('typing').textContent = bienvenido[sessionStorage.getItem('menu')]
+    return
+  }
+
+  if (letraIndex < palabras[palabraIndex].length) {
+    typingElement.textContent += palabras[palabraIndex].charAt(letraIndex)
+    letraIndex++
+    setTimeout(tipear, velocidad)
+  } else {
+    // Pausa y luego borrar para la siguiente palabra
+    setTimeout(() => {
+      borrar()
+    }, pausaEntrePalabras)
+  }
 }
 
 function borrar() {
-    if (letraIndex > 0) {
-        typingElement.textContent = palabras[palabraIndex].substring(0, letraIndex - 1)
-        letraIndex--
-        setTimeout(borrar, velocidad / 2)
-    } else {
-        // Siguiente palabra
-        palabraIndex = (palabraIndex + 1) % palabras.length
-        setTimeout(tipear, velocidad)
-    }
+  if (letraIndex > 0) {
+    typingElement.textContent = palabras[palabraIndex].substring(0, letraIndex - 1)
+    letraIndex--
+    setTimeout(borrar, velocidad / 2)
+  } else {
+    // Siguiente palabra
+    palabraIndex = (palabraIndex + 1) % palabras.length
+    setTimeout(tipear, velocidad)
+  }
+}
+
+const menu_seleccion = (idioma) => {
+  const titulos = {
+    es: "¿Qué menú quieres ver?",
+    cat: "Quin menú vols veure?",
+    en: "What menu would you like to see?"
+  };
+  document.getElementById('typing').textContent = titulos[idioma]
+
+}
+
+const menu = (v, c) => {
+  if ('menu' === c) {
+    sessionStorage.removeItem('local')
+    sessionStorage.setItem('menu', v)
+    document.querySelector('#menu-idioma').classList.add('hide')
+    document.querySelector('#menu-local').classList.remove('hide')
+
+    const idioma = sessionStorage.getItem('menu') || 'es'
+    menu_seleccion(idioma)
+
+    // Cambiar los títulos de los botones según el idioma
+    document.querySelector('#direccion').remove()
+    document.querySelector('#menu-local-focacceria').textContent = locales_nombres[idioma].focacceria;
+    document.querySelector('#menu-local-bolleria').textContent = locales_nombres[idioma].bolleria;
+  }
+
+  if ('local' === c) {
+    sessionStorage.setItem('local', v)
+  }
+
+  // Si no se ha seleccionado el idioma o el local, redirigir
+  if (sessionStorage.getItem('menu') && sessionStorage.getItem('local')) {
+    window.location.href = './menu.html?v=' + sessionStorage.getItem('menu') + '&c=' + sessionStorage.getItem('local');
+  }
 }
 
 // Menu
-const menu = (v) => {
-    sessionStorage.setItem('menu', v)
-    window.location.href = './menu.html?v=' + v
-}
-
-// Menu datos
 const menu_datos = [
   {
     "id": "POPIS-01",
@@ -1325,101 +1384,96 @@ const menu_datos = [
 ]
 
 const menu_cargar = () => {
-    const params = new URLSearchParams(window.location.search)
-    const idioma = sessionStorage.getItem('menu') || params.get('v') || 'cat'
+  const params = new URLSearchParams(window.location.search)
+  const idioma = sessionStorage.getItem('menu') || params.get('v') || 'es'
+  const local = sessionStorage.getItem('local') || params.get('c') || 'todo'  // Usar 'todo' si no hay valor
 
-    const titulos = {
-        es: 'Menú en español',
-        en: 'Menu in English',
-        cat: 'Menú en català'
+  // Titulo del menu
+  const titulo = locales_nombres[idioma] && locales_nombres[idioma][local] || 'Selecciona un menú'
+  document.querySelector('#menu_titulo').textContent = titulo.toUpperCase() // Titulo en mayúsculas
+
+  // Agrupar items por local
+  const locales = {}
+
+  // Filtrar los items si el local no es 'todo'
+  menu_datos.forEach(item => {
+    // Si el valor de local es 'todo', agregar todos los items
+    if (local === 'todo' || item.local === local) {
+      const key = item.local
+      if (!locales[key]) locales[key] = []
+      locales[key].push(item)
     }
+  })
 
-    // Convertir el título a mayúsculas y eliminar puntos y comas
-    const titulo = titulos[idioma] || 'Menú'
-    document.querySelector('#menu_titulo').textContent = titulo
+  // Limpiar el contenedor de menús previos
+  const contenedor = document.querySelector('#menu_contenedor')
+  contenedor.innerHTML = '' // Limpiar el contenedor
 
-    // Agrupar items por local
-    const locales = {}
-    menu_datos.forEach(item => {
-        const key = item.local
-        if (!locales[key]) locales[key] = []
-        locales[key].push(item)
+  // Crear un menú por local
+  Object.entries(locales).forEach(([local_nombre, items]) => {
+    const menuDiv = document.createElement('div')
+    menuDiv.className = 'menu'
+    menuDiv.id = `menu_${local_nombre}` // Asignar el id según el nombre del local
+
+    // Crear categorías por idioma
+    const categorias = {}
+    items.forEach(item => {
+      const key = item[`${idioma}_categoria`]
+      if (!categorias[key]) categorias[key] = []
+      categorias[key].push(item)
     })
 
-    // Limpiar el contenedor de menús previos
-    const contenedor = document.querySelector('#menu_contenedor')
-    contenedor.innerHTML = '' // Limpiar el contenedor
+    // Crear las categorías y los items
+    Object.entries(categorias).forEach(([cat_nombre, items]) => {
+      const categoriaDiv = document.createElement('div')
+      categoriaDiv.className = 'menu_categoria'
 
-    // Crear un menú por local
-    Object.entries(locales).forEach(([local_nombre, items]) => {
-        const menuDiv = document.createElement('div')
-        menuDiv.className = 'menu'
-        menuDiv.id = `menu_${local_nombre}` // Asignar el id según el nombre del local
+      const tituloCategoria = document.createElement('h3')
+      tituloCategoria.id = `menu_categoria_titulo_${local_nombre}`
+      tituloCategoria.textContent = cat_nombre
+      categoriaDiv.appendChild(tituloCategoria)
 
-        // Crear el encabezado <h2> con el nombre del local (Focacceria o Bolleria)
-        const h2 = document.createElement('h2')
-        h2.textContent = local_nombre.toUpperCase() // Focacceria o Bolleria
-        menuDiv.appendChild(h2)
+      const itemsContainer = document.createElement('div')
+      itemsContainer.id = `menu_categoria_items_${local_nombre}`
 
-        // Crear categorías por idioma
-        const categorias = {}
-        items.forEach(item => {
-            const key = item[`${idioma}_categoria`]
-            if (!categorias[key]) categorias[key] = []
-            categorias[key].push(item)
-        })
+      items.forEach(item => {
+        const itemDiv = document.createElement('div')
+        itemDiv.className = 'menu_categoria_item'
 
-        // Crear las categorías y los items
-        Object.entries(categorias).forEach(([cat_nombre, items]) => {
-            const categoriaDiv = document.createElement('div')
-            categoriaDiv.className = 'menu_categoria'
+        const itemP = document.createElement('div')
+        itemP.className = 'menu_categoria_item_p'
 
-            const tituloCategoria = document.createElement('h3')
-            tituloCategoria.id = `menu_categoria_titulo_${local_nombre}`
-            tituloCategoria.textContent = cat_nombre
-            categoriaDiv.appendChild(tituloCategoria)
+        const nombre = document.createElement('p')
+        nombre.className = 'menu_item_nombre'
+        nombre.textContent = item[`${idioma}_nombre`]
 
-            const itemsContainer = document.createElement('div')
-            itemsContainer.id = `menu_categoria_items_${local_nombre}`
+        const precio = document.createElement('p')
+        precio.className = 'menu_item_precio'
+        precio.textContent = `${item.precio} €`
 
-            items.forEach(item => {
-                const itemDiv = document.createElement('div')
-                itemDiv.className = 'menu_categoria_item'
+        itemP.appendChild(nombre)
+        itemP.appendChild(precio)
 
-                const itemP = document.createElement('div')
-                itemP.className = 'menu_categoria_item_p'
+        const itemD = document.createElement('div')
+        itemD.className = 'menu_categoria_item_d'
 
-                const nombre = document.createElement('p')
-                nombre.className = 'menu_item_nombre'
-                nombre.textContent = item[`${idioma}_nombre`]
+        const descripcion = document.createElement('p')
+        descripcion.className = 'menu_item_descripcion'
+        descripcion.textContent = item[`${idioma}_descripcion`] || ''
 
-                const precio = document.createElement('p')
-                precio.className = 'menu_item_precio'
-                precio.textContent = `${item.precio} €`
+        itemD.appendChild(descripcion)
 
-                itemP.appendChild(nombre)
-                itemP.appendChild(precio)
+        itemDiv.appendChild(itemP)
+        itemDiv.appendChild(itemD)
 
-                const itemD = document.createElement('div')
-                itemD.className = 'menu_categoria_item_d'
+        itemsContainer.appendChild(itemDiv)
+      })
 
-                const descripcion = document.createElement('p')
-                descripcion.className = 'menu_item_descripcion'
-                descripcion.textContent = item[`${idioma}_descripcion`] || ''
-
-                itemD.appendChild(descripcion)
-
-                itemDiv.appendChild(itemP)
-                itemDiv.appendChild(itemD)
-
-                itemsContainer.appendChild(itemDiv)
-            })
-
-            categoriaDiv.appendChild(itemsContainer)
-            menuDiv.appendChild(categoriaDiv)
-        })
-
-        // Agregar el menú al contenedor
-        contenedor.appendChild(menuDiv)
+      categoriaDiv.appendChild(itemsContainer)
+      menuDiv.appendChild(categoriaDiv)
     })
+
+    // Agregar el menú al contenedor
+    contenedor.appendChild(menuDiv)
+  })
 }
