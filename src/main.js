@@ -10,14 +10,14 @@ const palabras = [
 
 const locales_nombres = {
   es: {
-    focacceria: "Focacceria de carne ahumada",
-    bolleria: "Café de especialidad y panadería",
-    todo: "Focacceria de carne ahumada & Café de especialidad y panadería"
+    focacceria: "Focacceria de Carne Ahumada",
+    bolleria: "Café de Especialidad y Panadería",
+    todo: "Focacceria de Carne Ahumada & Café de especialidad y panadería"
   },
   cat: {
-    focacceria: "Focacceria de carn fumada",
-    bolleria: "Cafè d'especialitat i fleca",
-    todo: "Focacceria de carn fumada & Cafè d'especialitat i fleca"
+    focacceria: "Focacceria de Carn Fumada",
+    bolleria: "Cafè D'especialitat i Fleca",
+    todo: "Focacceria de Carn Fumada & Cafè D'especialitat i Fleca"
   },
   en: {
     focacceria: "Smoked Meat Focacceria",
