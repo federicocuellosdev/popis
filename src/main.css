@@ -48,7 +48,7 @@ body {
 
 .principal #popis-letras {
     width: 90px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .principal h2 {
@@ -140,4 +140,12 @@ body {
 
 .menu .menu_item_descripcion {
     margin-top: 5px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 4rem;
+    border-top: 1px solid var(--color-blanco);
+    border-bottom: 1px solid var(--color-blanco);
+    padding: 70px 0px;
 }
