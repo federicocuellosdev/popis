@@ -743,34 +743,6 @@ const menu_datos = [
   },
   {
     "id": "POPIS-45",
-    "precio": 9,
-    "cat_nombre": "VICENS",
-    "cat_descripcion": "Mesclum d’enciams - carbassa rostida - ou dur - nous - formatge de cabra - ceba en vinagre - salsa d’oli i mel | Servit amb hummus de remolatxa i pa (consulta l'opció sense gluten)",
-    "cat_categoria": "AMANIDES - de 12h a 16h",
-    "en_nombre": "VICENS",
-    "en_descripcion": "Mixed greens - roasted pumpkin - hard -boiled egg - walnuts - goat cheese - pickled onions - olive and honey dressing | Served with beetroot hummus and bread (ask for gluten-free option)",
-    "en_categoria": "SALADS - from 12 PM to 4 PM",
-    "es_nombre": "VICENS",
-    "es_descripcion": "Mix de hojas verdes - calabaza asada - huevo duro - nueces - queso de cabra - cebolla encurtida - salsa de oliva y miel | acompañado de hummus de remolacha y pan (consulta opción sin gluten)",
-    "es_categoria": "ENSALADAS - de 12 a 16 hs",
-    "local": "focacceria"
-  },
-  {
-    "id": "POPIS-46",
-    "precio": 9,
-    "cat_nombre": "GAUDI",
-    "cat_descripcion": "Mesclum d’enciams - miso de bolets amb arròs bicolor i crema de bolets - mongeta vermella - cacauets - pollastre esmicolat - allioli | Servit amb hummus de remolatxa i pa (consulta l'opció sense gluten)",
-    "cat_categoria": "AMANIDES - de 12h a 16h",
-    "en_nombre": "GAUDI",
-    "en_descripcion": "Mixed greens - mushroom miso with black & white rice and mushroom cream - red beans - peanuts -shredded chicken - aioli | Served with beetroot hummus and bread (ask for gluten-free option)",
-    "en_categoria": "SALADS - from 12 PM to 4 PM",
-    "es_nombre": "GAUDI",
-    "es_descripcion": "Mix de hojas verdes - miso de hongos con arroz bicolor y crema de setas - alubia roja - mani - pollo desmechado - aioli | acompañado de hummus de remolacha y pan (consulta opción sin gluten)",
-    "es_categoria": "ENSALADAS - de 12 a 16 hs",
-    "local": "focacceria"
-  },
-  {
-    "id": "POPIS-47",
     "precio": "1,8",
     "cat_nombre": "ESPRESSO",
     "cat_descripcion": "",
@@ -784,7 +756,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-48",
+    "id": "POPIS-46",
     "precio": "2,3",
     "cat_nombre": "ESPRESSO DOBLE",
     "cat_descripcion": "",
@@ -798,7 +770,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-49",
+    "id": "POPIS-47",
     "precio": "2,2",
     "cat_nombre": "TALLAT",
     "cat_descripcion": "",
@@ -812,7 +784,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-50",
+    "id": "POPIS-48",
     "precio": "2,6",
     "cat_nombre": "AMERICANO",
     "cat_descripcion": "",
@@ -826,7 +798,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-51",
+    "id": "POPIS-49",
     "precio": "2,7",
     "cat_nombre": "LATTE",
     "cat_descripcion": "",
@@ -840,7 +812,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-52",
+    "id": "POPIS-50",
     "precio": "2,7",
     "cat_nombre": "CAPUCCINO",
     "cat_descripcion": "",
@@ -854,7 +826,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-53",
+    "id": "POPIS-51",
     "precio": "3,1",
     "cat_nombre": "FLAT WHITE",
     "cat_descripcion": "",
@@ -868,7 +840,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-54",
+    "id": "POPIS-52",
     "precio": "3,7",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
@@ -882,7 +854,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-55",
+    "id": "POPIS-53",
     "precio": 3,
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
@@ -896,7 +868,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-56",
+    "id": "POPIS-54",
     "precio": 3,
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
@@ -910,7 +882,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-57",
+    "id": "POPIS-55",
     "precio": "3,3",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
@@ -924,7 +896,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-58",
+    "id": "POPIS-56",
     "precio": "0,5",
     "cat_nombre": "EXTRA SHOT",
     "cat_descripcion": "",
@@ -938,7 +910,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-59",
+    "id": "POPIS-57",
     "precio": "3,5",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
@@ -952,7 +924,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-60",
+    "id": "POPIS-58",
     "precio": "2,00",
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
@@ -966,7 +938,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-61",
+    "id": "POPIS-59",
     "precio": "3,9",
     "cat_nombre": "LATTE FRED",
     "cat_descripcion": "",
@@ -980,7 +952,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-62",
+    "id": "POPIS-60",
     "precio": 4,
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
@@ -994,7 +966,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-63",
+    "id": "POPIS-61",
     "precio": 4,
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
@@ -1008,7 +980,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-64",
+    "id": "POPIS-62",
     "precio": 4,
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
@@ -1022,7 +994,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-65",
+    "id": "POPIS-63",
     "precio": "4,1",
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
@@ -1036,7 +1008,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-66",
+    "id": "POPIS-64",
     "precio": "4,5",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
@@ -1050,7 +1022,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-67",
+    "id": "POPIS-65",
     "precio": "4,5",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
@@ -1064,7 +1036,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-68",
+    "id": "POPIS-66",
     "precio": "4,5",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
@@ -1078,7 +1050,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-69",
+    "id": "POPIS-67",
     "precio": 4,
     "cat_nombre": "ESPRESSO TONIC",
     "cat_descripcion": "",
@@ -1092,7 +1064,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-70",
+    "id": "POPIS-68",
     "precio": 4,
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
@@ -1106,7 +1078,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-71",
+    "id": "POPIS-69",
     "precio": 4,
     "cat_nombre": "COLD BREW",
     "cat_descripcion": "",
@@ -1120,7 +1092,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-72",
+    "id": "POPIS-70",
     "precio": "0,5",
     "cat_nombre": "EXTRA SHOT",
     "cat_descripcion": "",
@@ -1134,7 +1106,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-73",
+    "id": "POPIS-71",
     "precio": "2,20",
     "cat_nombre": "CROISSANT CLÀSSIC X 1",
     "cat_descripcion": "",
@@ -1148,7 +1120,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-74",
+    "id": "POPIS-72",
     "precio": "11,90",
     "cat_nombre": "CROISSANT CLÀSSIC X 6",
     "cat_descripcion": "",
@@ -1162,7 +1134,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-75",
+    "id": "POPIS-73",
     "precio": 23,
     "cat_nombre": "CROISSANT CLÁSSIC X 12",
     "cat_descripcion": "",
@@ -1176,7 +1148,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-76",
+    "id": "POPIS-74",
     "precio": "2,45",
     "cat_nombre": "CROISSANT AMB TOPPINGS X 1",
     "cat_descripcion": "",
@@ -1190,7 +1162,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-77",
+    "id": "POPIS-75",
     "precio": 14,
     "cat_nombre": "CROISSANT AMB TOPPINGS X 6",
     "cat_descripcion": "",
@@ -1204,7 +1176,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-78",
+    "id": "POPIS-76",
     "precio": "26,90",
     "cat_nombre": "CROISSANT AMB TOPPINGS X 12",
     "cat_descripcion": "",
@@ -1218,7 +1190,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-79",
+    "id": "POPIS-77",
     "precio": "2,55",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 1",
     "cat_descripcion": "",
@@ -1232,7 +1204,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-80",
+    "id": "POPIS-78",
     "precio": "14,60",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 6",
     "cat_descripcion": "",
@@ -1246,7 +1218,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-81",
+    "id": "POPIS-79",
     "precio": "28,90",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 12",
     "cat_descripcion": "",
@@ -1260,7 +1232,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-82",
+    "id": "POPIS-80",
     "precio": "3,75",
     "cat_nombre": "BRIOIX DE PERNIL I FORMATGE",
     "cat_descripcion": "",
@@ -1274,7 +1246,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-83",
+    "id": "POPIS-81",
     "precio": "3,20",
     "cat_nombre": "PA DE PESSIC DE LLIMONA I NABIUS",
     "cat_descripcion": "",
@@ -1288,7 +1260,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-84",
+    "id": "POPIS-82",
     "precio": "3,30",
     "cat_nombre": "PASTIS DE PASTANAGA",
     "cat_descripcion": "",
@@ -1302,7 +1274,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-85",
+    "id": "POPIS-83",
     "precio": "3,40",
     "cat_nombre": "PA DE PLÀTAN AMB XCOCOLAT",
     "cat_descripcion": "",
@@ -1316,7 +1288,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-86",
+    "id": "POPIS-84",
     "precio": 3.5,
     "cat_nombre": "ESPECIALITAT DE LA SETMANA",
     "cat_descripcion": "",
@@ -1330,7 +1302,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-87",
+    "id": "POPIS-85",
     "precio": "4,5",
     "cat_nombre": "PA DE MOTLLE BRIOIX",
     "cat_descripcion": "",
@@ -1344,7 +1316,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-88",
+    "id": "POPIS-86",
     "precio": "3,5",
     "cat_nombre": "ROTTLE DE CANYELLA",
     "cat_descripcion": "",
@@ -1358,7 +1330,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-89",
+    "id": "POPIS-87",
     "precio": "4,00",
     "cat_nombre": "ROTTLE DE FESTUC",
     "cat_descripcion": "",
@@ -1372,7 +1344,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-90",
+    "id": "POPIS-88",
     "precio": 4,
     "cat_nombre": "ROTTLE DE CHOCOTORTA",
     "cat_descripcion": "",
@@ -1386,7 +1358,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-91",
+    "id": "POPIS-89",
     "precio": 4,
     "cat_nombre": "ROTTLE DE LEMON PIE",
     "cat_descripcion": "",
