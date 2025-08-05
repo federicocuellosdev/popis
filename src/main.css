@@ -115,6 +115,29 @@ body {
     height: auto;
 }
 
+.menu_descripcion {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blanco);
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+}
+
+.menu_descripcion .descripcion_icono {
+    margin-right: 30px;
+}
+
+.menu_descripcion .descripcion_icono svg {
+    color: var(--color-primario);
+}
+
+.menu_descripcion .descripcion_texto p {
+    font-family: 'tt chocolate', sans-serif !important;
+    color: #474747;
+}
+
+
 .menu {
     font-family: 'tt chocolate', sans-serif !important;
     color: var(--color-blanco);

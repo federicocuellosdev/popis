@@ -11,8 +11,8 @@ const palabras = [
 const locales_nombres = {
   es: {
     focacceria: "Focacceria de Carne Ahumada",
-    bolleria: "Café de Especialidad y Panadería",
-    todo: "Focacceria de Carne Ahumada & Café de especialidad y panadería"
+    bolleria: "Café de Especialidad y Bolería",
+    todo: "Focacceria de Carne Ahumada & Café de Especialidad y Bolería"
   },
   cat: {
     focacceria: "Focacceria de Carn Fumada",
@@ -72,6 +72,7 @@ const menu_seleccion = (idioma) => {
     cat: "Quin menú vols veure?",
     en: "What menu would you like to see?"
   };
+
   document.getElementById('typing').textContent = titulos[idioma]
   document.getElementById('typing').style.height = 'auto'
   document.getElementById('typing').style.overflow = 'none'
@@ -1408,6 +1409,18 @@ const menu_cargar = () => {
   // Titulo del menu
   const titulo = locales_nombres[idioma] && locales_nombres[idioma][local] || 'Selecciona un menú'
   document.querySelector('#menu_titulo').textContent = titulo.toUpperCase() // Titulo en mayúsculas
+
+  // Descripción del menu
+  const descripciones = {
+    es: "Realizar pedido en caja",
+    cat: "Realitzar la comanda a caixa",
+    en: "Place order at checkout"
+
+  }
+
+  document.querySelector('#descripcion_texto').textContent = (descripciones[idioma] || "Realizar pedido en caja").toUpperCase()
+
+
 
   // Agrupar items por local
   const locales = {}
