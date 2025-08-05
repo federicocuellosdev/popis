@@ -156,13 +156,13 @@ const menu_datos = [
   {
     "id": "POPIS-03",
     "precio": "11,9",
-    "cat_nombre": "DEL DIAMAN",
+    "cat_nombre": "DEL DIAMANT",
     "cat_descripcion": "Roast beef fumat - pesto rosa - Albergínies en conserva - Mozarella fior di latte.",
     "cat_categoria": "FOCÀCIES AMB ROAST BEEF FUMAT",
-    "en_nombre": "DEL DIAMAN",
+    "en_nombre": "DEL DIAMANT",
     "en_descripcion": "Smoked roast beef - Pink pesto - Preserved eggplants - Mozzarella fior di latte.",
     "en_categoria": "FOCACCIAS WITH SMOKED ROAST BEEF",
-    "es_nombre": "DEL DIAMAN",
+    "es_nombre": "DEL DIAMANT",
     "es_descripcion": "Roast beef ahumado - Pesto rosa - Berenjenas en conserva - Mozarella fior di latte.",
     "es_categoria": "FOCACCIAS CON ROAST BEEF AHUMADO",
     "local": "focacceria"
