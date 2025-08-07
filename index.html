@@ -11,28 +11,16 @@
 </head>
 
 <body>
-    <section class="contenedor">
+    <section class="contenedor" id="menu-idioma">
         <div class="principal">
             <img id="popis-gato" src="./src/img/popis-gato.svg"
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
             <h2 id="typing"></h2>
 
-            <div class="botones" id="menu-idioma">
+            <div class="botones">
                 <button onclick="menu('es','menu')">Menú en Español</button>
                 <button onclick="menu('en','menu')">Menu in English</button>
                 <button onclick="menu('cat','menu')">Menú en Català</button>
-            </div>
-            <div class="botones hide" id="menu-local">
-                <button onclick="menu('focacceria','local')" id="menu-local-focacceria">Focacceria de Carne
-                    Ahumada</button>
-                <button onclick="menu('bolleria','local')" id="menu-local-bolleria">Specialty Coffe & Bakery</button>
-                <span class="atras" onclick="recarga()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
-                        class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-                    </svg>
-                </span>
             </div>
 
             <div id="direccion">
@@ -51,6 +39,29 @@
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
 
         </div>
+    </section>
+
+    <section>
+
+        <div class="principal hide" id="menu-local">
+            <img id="popis-gato" src="./src/img/popis-gato.svg"
+                alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
+            <h2 id="pregunta"></h2>
+            
+            <div class="botones" >
+                <button onclick="menu('focacceria','local')" id="menu-local-focacceria">Focacceria de Carne
+                    Ahumada</button>
+                <button onclick="menu('bolleria','local')" id="menu-local-bolleria">Specialty Coffe & Bakery</button>
+                <span class="atras" onclick="recarga()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
+                        class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
     </section>
 
     <script src="./src/main.js"></script>

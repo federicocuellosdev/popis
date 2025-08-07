@@ -8,10 +8,11 @@ const palabras = [
   'Bienvenue'     // Francés
 ]
 
+// Pregunta
 const locales_nombres = {
   es: {
     focacceria: "Focacceria de Carne Ahumada",
-    bolleria: "Café de Especialidad y Bolería",
+    bolleria: "Café de Especialidad y Bollería",
     todo: "Focacceria de Carne Ahumada & Café de Especialidad y Bolería"
   },
   cat: {
@@ -73,11 +74,7 @@ const menu_seleccion = (idioma) => {
     en: "What menu would you like to see?"
   };
 
-  document.getElementById('typing').textContent = titulos[idioma]
-  document.getElementById('typing').style.height = 'auto'
-  document.getElementById('typing').style.overflow = 'none'
-  document.getElementById('typing').style.paddingBottom = '0'
-
+  document.getElementById('pregunta').textContent = titulos[idioma]
 }
 
 const menu = (v, c) => {
@@ -925,7 +922,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-58",
-    "precio": "2,00",
+    "precio": 2,
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1142,7 +1139,7 @@ const menu_datos = [
     "en_nombre": "CLASSIC CROISSANT X 12",
     "en_descripcion": "",
     "en_categoria": "",
-    "es_nombre": "MEDIALUNA CLASICA X 6",
+    "es_nombre": "MEDIALUNA CLASICA X 12",
     "es_descripcion": "",
     "es_categoria": "",
     "local": "bolleria"
@@ -1331,7 +1328,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-87",
-    "precio": "4,00",
+    "precio": 4,
     "cat_nombre": "ROTTLE DE FESTUC",
     "cat_descripcion": "",
     "cat_categoria": "ROTTLE DOLÇ",
