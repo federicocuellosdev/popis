@@ -1392,10 +1392,10 @@ const menu_datos = [
     "cat_nombre": "LIBERTAT",
     "cat_descripcion": "Carn de Vedella - Salsa aioli - Pebrots en conserva - Cogombres agredolços - Mozarella fior di latte.",
     "cat_categoria": "FOCÀCIES AMB ROAST BEEF FUMAT",
-    "en_nombre": "LIBERTAD",
+    "en_nombre": "LIBERTAT",
     "en_descripcion": "Beef - Aioli sauce - Preserved peppers - Fior di latte mozzarella.",
     "en_categoria": "FOCACCIAS WITH SMOKED ROAST BEEF",
-    "es_nombre": "LIBERTAD",
+    "es_nombre": "LIBERTAT",
     "es_descripcion": "Carne - Salsa aioli - Pimientos en conserva - Mozarella fior di latte.",
     "es_categoria": "FOCACCIAS CON ROAST BEEF AHUMADO",
     "local": "focacceria"
@@ -2102,6 +2102,20 @@ const menu_datos = [
   },
   {
     "id": "POPIS-53",
+    "precio": 8,
+    "cat_nombre": "CROISSANT CLÀSSIC X 4",
+    "cat_descripcion": "",
+    "cat_categoria": "",
+    "en_nombre": "CLASSIC CROISSANT X 4",
+    "en_descripcion": "",
+    "en_categoria": "",
+    "es_nombre": "MEDIALUNA CLASICA X 4",
+    "es_descripcion": "",
+    "es_categoria": "",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-54",
     "precio": "11,90",
     "cat_nombre": "CROISSANT CLÀSSIC X 6",
     "cat_descripcion": "",
@@ -2115,7 +2129,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-54",
+    "id": "POPIS-55",
     "precio": 23,
     "cat_nombre": "CROISSANT CLÁSSIC X 12",
     "cat_descripcion": "",
@@ -2129,7 +2143,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-55",
+    "id": "POPIS-56",
     "precio": "2,45",
     "cat_nombre": "CROISSANT AMB TOPPINGS X 1",
     "cat_descripcion": "",
@@ -2143,7 +2157,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-56",
+    "id": "POPIS-57",
     "precio": 14,
     "cat_nombre": "CROISSANT AMB TOPPINGS X 6",
     "cat_descripcion": "",
@@ -2157,7 +2171,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-57",
+    "id": "POPIS-58",
     "precio": "26,90",
     "cat_nombre": "CROISSANT AMB TOPPINGS X 12",
     "cat_descripcion": "",
@@ -2171,7 +2185,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-58",
+    "id": "POPIS-59",
     "precio": "2,55",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 1",
     "cat_descripcion": "",
@@ -2185,7 +2199,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-59",
+    "id": "POPIS-60",
     "precio": "14,60",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 6",
     "cat_descripcion": "",
@@ -2199,7 +2213,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-60",
+    "id": "POPIS-61",
     "precio": "28,90",
     "cat_nombre": "CROISSANT DE PERNIL I FORMATGE X 12",
     "cat_descripcion": "",
@@ -2213,7 +2227,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-61",
+    "id": "POPIS-62",
     "precio": "3,75",
     "cat_nombre": "BRIOIX DE PERNIL I FORMATGE",
     "cat_descripcion": "",
@@ -2227,7 +2241,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-62",
+    "id": "POPIS-63",
     "precio": "3,20",
     "cat_nombre": "PA DE PESSIC DE LLIMONA I NABIUS",
     "cat_descripcion": "",
@@ -2241,7 +2255,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-63",
+    "id": "POPIS-64",
     "precio": "3,40",
     "cat_nombre": "PASTIS DE PASTANAGA",
     "cat_descripcion": "",
@@ -2255,7 +2269,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-64",
+    "id": "POPIS-65",
     "precio": "3,20",
     "cat_nombre": "PA DE PLÀTAN AMB XCOCOLAT",
     "cat_descripcion": "",
@@ -2269,7 +2283,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-65",
+    "id": "POPIS-66",
     "precio": "3,5",
     "cat_nombre": "ROTTLE DE CANYELLA",
     "cat_descripcion": "",
@@ -2283,7 +2297,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-66",
+    "id": "POPIS-67",
     "precio": 4,
     "cat_nombre": "ROTTLE DE FESTUC",
     "cat_descripcion": "",
@@ -2297,7 +2311,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-67",
+    "id": "POPIS-68",
     "precio": 4,
     "cat_nombre": "ROTTLE DE CHOCOTORTA",
     "cat_descripcion": "",
@@ -2311,7 +2325,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-68",
+    "id": "POPIS-69",
     "precio": 4,
     "cat_nombre": "ROTTLE DE LEMON PIE",
     "cat_descripcion": "",
