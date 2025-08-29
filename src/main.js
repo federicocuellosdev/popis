@@ -2386,14 +2386,6 @@ const menu_datos = [
   }
 ]
 
-const carta_fiesta_gracias = [
-  {
-    es: "Carta Fiesta de Gracia",
-    cat: "Menú Festa de Gràcia",
-    en: "Gràcia Festival Menu"
-  }
-]
-
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
   const idioma = sessionStorage.getItem('menu') || params.get('v') || 'es'
@@ -2401,7 +2393,7 @@ const menu_cargar = () => {
 
   // Titulo del menu
   const titulo = locales_nombres[idioma] && locales_nombres[idioma][local] || 'Selecciona un menú'
-  document.querySelector('#menu_titulo').textContent = titulo.toUpperCase() + " | " + carta_fiesta_gracias[0][idioma].toUpperCase() // Titulo en mayúsculas
+  document.querySelector('#menu_titulo').textContent = titulo.toUpperCase()
 
   // Descripción del menu
   const descripciones = {
