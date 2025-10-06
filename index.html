@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/main.css">
     <title>POPIS - Focacceria de carne ahumada y Specialty Coffe & Bakery</title>
     <script>sessionStorage.clear()</script>
+
 </head>
 
 <body>
@@ -17,10 +18,7 @@
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
             <h2 id="typing"></h2>
 
-            <div class="botones">
-                <button onclick="menu('es','menu')">Menú en Español</button>
-                <button onclick="menu('en','menu')">Menu in English</button>
-                <button onclick="menu('cat','menu')">Menú en Català</button>
+            <div class="botones" id="botones">
             </div>
 
             <div id="direccion">
@@ -47,8 +45,8 @@
             <img id="popis-gato" src="./src/img/popis-gato.svg"
                 alt="Popis - Focacceria de carne ahumada y Specialty Coffe & Bakery">
             <h2 id="pregunta"></h2>
-            
-            <div class="botones" >
+
+            <div class="botones">
                 <button onclick="menu('focacceria','local')" id="menu-local-focacceria">Focacceria de Carne
                     Ahumada</button>
                 <button onclick="menu('bolleria','local')" id="menu-local-bolleria">Specialty Coffe & Bakery</button>
@@ -66,6 +64,32 @@
 
     <script src="./src/main.js"></script>
     <script>tipear()</script>
+    <script>
+        // función flecha idioma()
+        const idioma = () => (navigator.language || navigator.userLanguage).split('-')[0];
+
+        // textos de los botones según idioma
+        const traducciones = {
+            es: { menu: "Menú", reserva: "Realizar reserva" },
+            en: { menu: "Menu", reserva: "Make a reservation" },
+            ca: { menu: "Menú", reserva: "Fer una reserva" }, // catalán
+        };
+
+        // obtener idioma actual (por defecto español si no está en la lista)
+        const lang = traducciones[idioma()] ? idioma() : "es";
+
+        // generar botones
+        const contenedor = document.getElementById("botones");
+        contenedor.innerHTML = `
+            <button onclick="menu('${lang}','menu')">${traducciones[lang].menu}</button>
+            <button onclick="reserva('${lang}')">${traducciones[lang].reserva}</button>
+        `;
+
+        const reserva = (lang) => {
+            console.log(lang)
+        }
+
+    </script>
 </body>
 
 </html>
