@@ -964,7 +964,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-61",
-    "precio": "4,20",
+    "precio": "4,70",
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
