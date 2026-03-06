@@ -712,7 +712,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-43",
-    "precio": "2,00",
+    "precio": "1,90",
     "cat_nombre": "ESPRESSO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -726,7 +726,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-44",
-    "precio": "2,50",
+    "precio": "2,40",
     "cat_nombre": "ESPRESSO DOBLE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -740,7 +740,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-45",
-    "precio": "2,50",
+    "precio": "2,40",
     "cat_nombre": "TALLAT",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -754,7 +754,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-46",
-    "precio": "3,00",
+    "precio": "2,80",
     "cat_nombre": "AMERICANO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -768,7 +768,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-47",
-    "precio": "3,00",
+    "precio": "2,90",
     "cat_nombre": "LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -782,7 +782,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-48",
-    "precio": "3,00",
+    "precio": "2,90",
     "cat_nombre": "CAPUCCINO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -810,7 +810,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-50",
-    "precio": "4,00",
+    "precio": "3,90",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -824,7 +824,21 @@ const menu_datos = [
   },
   {
     "id": "POPIS-51",
-    "precio": "3,50",
+    "precio": "4,40",
+    "cat_nombre": "VAINILLA MATCHA LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "VAINILLA MATCHA LATTE",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "VAINILLA MATCHA LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-52",
+    "precio": "3,40",
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -837,8 +851,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-52",
-    "precio": "3,50",
+    "id": "POPIS-53",
+    "precio": "3,40",
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -851,8 +865,22 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-53",
-    "precio": "4,00",
+    "id": "POPIS-54",
+    "precio": "3,40",
+    "cat_nombre": "LATTE DE MOCCA",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "MOCCA LATTE",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "MOCCA LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-55",
+    "precio": "3,90",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -865,8 +893,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-54",
-    "precio": "4,00",
+    "id": "POPIS-56",
+    "precio": "3,90",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -879,8 +907,22 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-55",
-    "precio": "2,50",
+    "id": "POPIS-57",
+    "precio": "4,40",
+    "cat_nombre": "DIRTY CHAI LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "DIRTY CHAI LATTE",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "DIRTY CHAI LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-58",
+    "precio": "2,40",
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -893,8 +935,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-56",
-    "precio": "3,80",
+    "id": "POPIS-59",
+    "precio": "3,50",
     "cat_nombre": "BATCH BREW",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -907,7 +949,49 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-57",
+    "id": "POPIS-60",
+    "precio": "3,90",
+    "cat_nombre": "PURPLE LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "PURPLE LATTE",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "PURPLE LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-61",
+    "precio": "3,90",
+    "cat_nombre": "PINK LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "PINK LATTE",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "PINK LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-62",
+    "precio": "3,70",
+    "cat_nombre": "GOLDEN MILK",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES CALENTES",
+    "en_nombre": "GOLDEN MILK",
+    "en_descripcion": "",
+    "en_categoria": "HOT BEVERAGES",
+    "es_nombre": "GOLDEN MILK",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS CALIENTES",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-63",
     "precio": "4,50",
     "cat_nombre": "LATTE FRED",
     "cat_descripcion": "",
@@ -921,7 +1005,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-58",
+    "id": "POPIS-64",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
@@ -935,7 +1019,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-59",
+    "id": "POPIS-65",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
@@ -949,7 +1033,21 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-60",
+    "id": "POPIS-66",
+    "precio": "4,80",
+    "cat_nombre": "LATTE FRED DE MOCCA",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED MOCCA LATTE",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED MOCCA LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-67",
     "precio": "4,50",
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
@@ -963,8 +1061,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-61",
-    "precio": "4,70",
+    "id": "POPIS-68",
+    "precio": "4,20",
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -977,7 +1075,21 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-62",
+    "id": "POPIS-69",
+    "precio": "5,00",
+    "cat_nombre": "LATTE FRED DE VAINILLA MATCHA",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "LATTE FRED DE VAINILLA MATCHA",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "LATTE FRED DE VAINILLA MATCHA",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-70",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
@@ -991,7 +1103,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-63",
+    "id": "POPIS-71",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
@@ -1005,7 +1117,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-64",
+    "id": "POPIS-72",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
@@ -1019,7 +1131,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-65",
+    "id": "POPIS-73",
     "precio": "4,70",
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
@@ -1028,6 +1140,62 @@ const menu_datos = [
     "en_descripcion": "",
     "en_categoria": "COLD DRINKS",
     "es_nombre": "ICED CHAI LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-74",
+    "precio": "5,20",
+    "cat_nombre": "ICED DIRTY CHAI LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED DIRTY CHAI LATTE",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED DIRTY CHAI LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-75",
+    "precio": 5,
+    "cat_nombre": "ICED PURPLE LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED PURPLE LATTE",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED PURPLE LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-76",
+    "precio": 5,
+    "cat_nombre": "ICED PINK LATTE",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED PINK LATTE",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED PINK LATTE",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-77",
+    "precio": "4,70",
+    "cat_nombre": "ICED GOLDEN MILK",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED GOLDEN MILK",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED GOLDEN MILK",
     "es_descripcion": "",
     "es_categoria": "BEBIDAS FRIAS",
     "local": "bolleria"
