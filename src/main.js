@@ -747,7 +747,7 @@ const menu_datos = [
     "en_nombre": "GLASS OF RED WINE",
     "en_descripcion": "GLASS",
     "en_categoria": "WINE",
-    "es_nombre": "Red wine glass",
+    "es_nombre": "VINO TINTO DE LA CASA",
     "es_descripcion": "",
     "es_categoria": "VINOS",
     "local": "focacceria"
@@ -761,7 +761,7 @@ const menu_datos = [
     "en_nombre": "GLASS OF WHITE WINE",
     "en_descripcion": "GLASS",
     "en_categoria": "WINE",
-    "es_nombre": "White wine glass",
+    "es_nombre": "VINO BLANCO DE LA CASA",
     "es_descripcion": "",
     "es_categoria": "VINOS",
     "local": "focacceria"
