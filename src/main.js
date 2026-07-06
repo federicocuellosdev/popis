@@ -134,7 +134,7 @@ const menu_datos = [
     "es_nombre": "CHIMI (LIMITED EDITION)",
     "es_descripcion": "Carne Roast Beef - Chimichurri - Queso - Cebolla Crispy - Rúcula - Tomate Fresco",
     "es_categoria": "FOCACCIAS DE CARNE",
-    "local": ""
+    "local": "focacceria"
   },
   {
     "id": "POPIS-02",
