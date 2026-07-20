@@ -11,19 +11,19 @@ const palabras = [
 // Pregunta
 const locales_nombres = {
   es: {
-    focacceria: "Focacceria de Carne",
-    bolleria: "Café de Especialidad y Bollería",
-    todo: "Focacceria de Carne & Café de Especialidad y Bolería"
+    focacceria: "Focacceria de Carne y Pollo",
+    bolleria: "Café de Especialidad, Bollería y Brunch",
+    todo: "Focacceria de Carne y Pollo & Café de Especialidad, Bollería y Brunch"
   },
   cat: {
-    focacceria: "Focacceria de Carn",
-    bolleria: "Cafè D'especialitat i Fleca",
-    todo: "Focacceria de Carn & Cafè D'especialitat i Fleca"
+    focacceria: "Focacceria de Carn i Pollastre",
+    bolleria: "Cafè D'especialitat, Fleca i Brunch",
+    todo: "Focacceria de Carn i Pollastre & Cafè D'especialitat, Fleca i Brunch"
   },
   en: {
-    focacceria: "Meat Focacceria",
-    bolleria: "Specialty Coffee and Bakery",
-    todo: "Meat Focacceria & Specialty Coffee and Bakery"
+    focacceria: "Meat & Chicken Focacceria",
+    bolleria: "Specialty Coffee, Bakery & Brunch",
+    todo: "Meat & Chicken Focacceria & Specialty Coffee, Bakery & Brunch"
   }
 }
 
@@ -127,13 +127,13 @@ const menu_datos = [
     "precio": "14,50",
     "cat_nombre": "CHIMI (LIMITED EDITION)",
     "cat_descripcion": "Carn Roast beef - Chimichurri - Formatge - Ceba Cruixent - Ruca - Tomàquet Fresc.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "CHIMI (LIMITED EDITION)",
     "en_descripcion": "Roast beef - Chimichurri - Cheese - Crispy Onions - Arugula - Fresh Tomato.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "CHIMI (LIMITED EDITION)",
     "es_descripcion": "Carne Roast Beef - Chimichurri - Queso - Cebolla Crispy - Rúcula - Tomate Fresco",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -141,13 +141,13 @@ const menu_datos = [
     "precio": "12,50",
     "cat_nombre": "LESSEPS",
     "cat_descripcion": "Carn braseada i esfilagarsada - Crema de festucs - Ceba caramel·litzades.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "LESSEPS",
     "en_descripcion": "Braised & pulled beef - Pistachio cream - Caramelized onions.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "LESSEPS",
     "es_descripcion": "Carne desmechada - Crema de pistachos - Cebollas Caramelizadas.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -155,13 +155,13 @@ const menu_datos = [
     "precio": "12,50",
     "cat_nombre": "DEL SOL",
     "cat_descripcion": "Carn braseada i esfilagarsada - Malbec glacejat - Cebes caramel·litzades.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "DEL SOL",
     "en_descripcion": "Braised & pulled beef - Glazed Malbec - Caramelized onions.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "DEL SOL",
     "es_descripcion": "Carne desmechada - Malbec glaseado - Cebollas caramelizadas.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -169,13 +169,13 @@ const menu_datos = [
     "precio": 13.5,
     "cat_nombre": "DEL DIAMANT",
     "cat_descripcion": "Carn braseada i esfilagarsada - Pesto rosa - Albergínies en conserva - Mozarella fior di latte.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "DEL DIAMANT",
     "en_descripcion": "Braised & pulled beef - Pink pesto - Preserved eggplants - Mozzarella fior di latte.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "DEL DIAMANT",
     "es_descripcion": "Carne desmechada - Pesto rosa - Berenjenas en conserva - Mozarella fior di latte.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -183,13 +183,13 @@ const menu_datos = [
     "precio": "13,50",
     "cat_nombre": "DE LA VIRREINA",
     "cat_descripcion": "Carn braseada i esfilagarsada - Crema de bolets - Pebrots en conserva - Coleslaw.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "DE LA VIRREINA",
     "en_descripcion": "Braised & pulled beef - Creamy oyster mushrooms - Preserved peppers - Coleslaw.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "DE LA VIRREINA",
     "es_descripcion": "Carne desmechada - Cremoso de setas - Pimientos en conserva - Coleslaw.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -197,13 +197,13 @@ const menu_datos = [
     "precio": 13,
     "cat_nombre": "DE LA VILA",
     "cat_descripcion": "Carn braseada i esfilagarsada - Crema de pesto - Pebrots en conserva - Formatge.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "DE LA VILA",
     "en_descripcion": "Braised & pulled beef - Pesto cream - Preserved peppers - Cheese.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "DE LA VILA",
     "es_descripcion": "Carne desmechada - Crema de pesto - Pimientos en conserva - Queso.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -211,13 +211,13 @@ const menu_datos = [
     "precio": "12,50",
     "cat_nombre": "LIBERTAT",
     "cat_descripcion": "Carn braseada i esfilagarsada - Salsa aioli - Pebrots en conserva - Mozarella fior di latte.",
-    "cat_categoria": "FOCACCIAS AMB CARN",
+    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
     "en_nombre": "LIBERTAD",
     "en_descripcion": "Braised & pulled beef - Aioli sauce - Preserved peppers - Fior di latte mozzarella.",
-    "en_categoria": "FOCACCIAS WITH MEAT",
+    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
     "es_nombre": "LIBERTAD",
     "es_descripcion": "Carne desmechada - Salsa aioli - Pimientos en conserva - Mozarella fior di latte.",
-    "es_categoria": "FOCACCIAS DE CARNE",
+    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
     "local": "focacceria"
   },
   {
@@ -880,6 +880,188 @@ const menu_datos = [
   },
   {
     "id": "POPIS-55",
+    "precio": "6,5",
+    "cat_nombre": "FRESH",
+    "cat_descripcion": "Espinacs, plàtan, llimona i gingebre.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "FRESH",
+    "en_descripcion": "Spinach, banana, lemon, and ginger.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "FRESH",
+    "es_descripcion": "Espinaca, Banana, limón, jengibre",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-56",
+    "precio": "6,9",
+    "cat_nombre": "BERRYS",
+    "cat_descripcion": "Plàtan, fruits vermells, xia i beguda vegetal d'ametlla.\n+ PROTEÏNA 1,50 €",
+    "cat_categoria": "",
+    "en_nombre": "BERRYS",
+    "en_descripcion": "Banana, mixed berries, chia, and almond plant-based milk.\n+ PROTEIN €1.50",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "BERRYS",
+    "es_descripcion": "Banana, frutos rojos, chìa, bebida vegetal de almendras\n+ PROTEINA 1,5€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-57",
+    "precio": "6,9",
+    "cat_nombre": "PEANUT",
+    "cat_descripcion": "Plàtan, mantega de cacauet, cacau i beguda vegetal d'ametlla.\n+ PROTEÏNA 1,50 €",
+    "cat_categoria": "",
+    "en_nombre": "PEANUT",
+    "en_descripcion": "Banana, peanut butter, cocoa, and almond plant-based milk.\n+ PROTEIN €1.50",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "PEANUT",
+    "es_descripcion": "Banana, mantequilla de cacahuete, cacao, bebida vegetal de almendras\n+ PROTEINA 1,5€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-58",
+    "precio": "8,5",
+    "cat_nombre": "AVOCADO TOAST - VEGAN",
+    "cat_descripcion": "Pa de llavors torrat, alvocat, tomàquets cherry, brots d'alfals, oli de pesto.\nOU ESCALFAT EXTRA 2 €",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "AVOCADO TOAST - VEGAN",
+    "en_descripcion": "Toasted seeded bread, avocado, cherry tomatoes, alfalfa sprouts, pesto oil.\nEXTRA POACHED EGG €2",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "AVOCADO TOAST - VEGAN",
+    "es_descripcion": "Pan de semillas tostado, aguacate, tomates cherry, brotes de alfalfa, aceite de pesto.\nEXTRA HUEVO POCHÉ 2€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-59",
+    "precio": 9,
+    "cat_nombre": "PINK TOAST - VEGAN",
+    "cat_descripcion": "Pa de llavors torrat, hummus de remolatxa, alvocat, brots d'alfals, reducció de vinagre balsàmic.\nOU ESCALFAT EXTRA 2 €",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "PINK TOAST - VEGAN",
+    "en_descripcion": "Toasted seeded bread, beetroot hummus, avocado, alfalfa sprouts, balsamic reduction.\nEXTRA POACHED EGG €2",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "PINK TOAST - VEGAN",
+    "es_descripcion": "Pan de semillas tostado, hummus de remolacha, aguacate, brotes de alfalfa, reduccion de balsámico.\nEXTRA HUEVO POCHÉ 2€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-60",
+    "precio": "10,5",
+    "cat_nombre": "PROSCIUTTO TOAST",
+    "cat_descripcion": "Pa de llavors torrat, stracciatella, ruca, prosciutto, tomàquets confitats, oli de pesto.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "PROSCIUTTO TOAST",
+    "en_descripcion": "Toasted seeded bread, stracciatella, arugula, prosciutto, confit cherry tomatoes, pesto oil.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "PROSCIUTTO TOAST",
+    "es_descripcion": "Pan de semillas tostado, straciatella, rúcula, prosciutto, tomates confitados, aceite de pesto",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-61",
+    "precio": "11,5",
+    "cat_nombre": "NORDIC PLATE - VEGGIE",
+    "cat_descripcion": "Ou escalfat, alvocat, pernil dolç, formatge cremós, tomàquets cherry, olives, cogombrets, ruca amb brots d'alfals, oli de pesto i pa de llavors.\nHUMMUS EXTRA 1,50 €",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "NORDIC PLATE - VEGGIE",
+    "en_descripcion": "Poached egg, avocado, cooked ham, cream cheese, cherry tomatoes, olives, pickles, arugula and alfalfa sprouts, pesto oil, and seeded bread.\nEXTRA HUMMUS €1.50",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "NORDIC PLATE - VEGGIE",
+    "es_descripcion": "Huevo poché, aguacate, jamón dulce, queso crema, tomates cherry, aceitunas, pepinillos, rúcula con brotes de alfalfa, aceite de pesto y pan de semillas.\nEXTRA HUMMUS 1,5€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-62",
+    "precio": "6,9",
+    "cat_nombre": "PEANUT BERRY BANANA TOAST - VEGAN",
+    "cat_descripcion": "Pa de llavors torrat, mantega de cacauet, melmelada de gerds i plàtan.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "PEANUT BERRY BANANA TOAST - VEGAN",
+    "en_descripcion": "Toasted seeded bread, peanut butter, raspberry jam, and banana.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "PEANUT BERRY BANANA TOAST - VEGAN",
+    "es_descripcion": "Pan de semillas tostado, mantequilla de cacahuete, mermelada de frambuesa y banana.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-63",
+    "precio": "6,9",
+    "cat_nombre": "HONEY WALNUT TOAST - VEGGIE",
+    "cat_descripcion": "Pa de llavors torrat, formatge cremós, nous i mel.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "HONEY WALNUT TOAST - VEGGIE",
+    "en_descripcion": "Toasted seeded bread, cream cheese, walnuts, and honey.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "HONEY WALNUT TOAST - VEGGIE",
+    "es_descripcion": "Pan de semillas tostado, queso crema, nueces y miel.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-64",
+    "precio": 6,
+    "cat_nombre": "POPIS TOAST - VEGGIE",
+    "cat_descripcion": "Pa de llavors torrat, mantega, dolç de llet i sal en escates.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "POPIS TOAST - VEGGIE",
+    "en_descripcion": "Toasted seeded bread, butter, dulce de leche, and flaky sea salt.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "POPIS TOAST - VEGGIE",
+    "es_descripcion": "Pan de semillas tostado, mantequilla, dulce de leche y sal en esacamas.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-65",
+    "precio": 9,
+    "cat_nombre": "BLUE CHIA BOWL - VEGAN Y SIN GLUTEN",
+    "cat_descripcion": "Púding de xia amb espirulina blava, plàtan i una altra fruita de temporada, nous, coco ratllat, mantega de cacauet i xarop d'atzavara.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "BLUE CHIA BOWL - VEGAN Y SIN GLUTEN",
+    "en_descripcion": "Blue spirulina chia pudding with banana, seasonal fruit, walnuts, shredded coconut, peanut butter, and agave syrup.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "BLUE CHIA BOWL - VEGAN Y SIN GLUTEN",
+    "es_descripcion": "Chía pudding con espirulina azul, banana y otra fruta de estación, nueces, coco rallado, mantequilla de cacahuete y agave.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-66",
+    "precio": "10,5",
+    "cat_nombre": "AÇAI BOWL - VEGAN Y SIN GLUTEN",
+    "cat_descripcion": "Base d'açaí, granola casolana sense gluten, plàtan, coco ratllat i mantega de cacauet.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "AÇAI BOWL - VEGAN Y SIN GLUTEN",
+    "en_descripcion": "Açaí base, homemade gluten-free granola, banana, shredded coconut, and peanut butter.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "AÇAI BOWL - VEGAN Y SIN GLUTEN",
+    "es_descripcion": "Base de açai, granola casera sin gluten, banana, coco rallado y mantequilla de cacahuete.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-67",
+    "precio": "8,8",
+    "cat_nombre": "GREEK YOGURTH BOWL - VEGGIE Y SIN GLUTEN",
+    "cat_descripcion": "Iogurt grec, granola casolana sense gluten, plàtan, fruita de temporada i mel.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "GREEK YOGURTH BOWL - VEGGIE Y SIN GLUTEN",
+    "en_descripcion": "Greek yogurt, homemade gluten-free granola, banana, seasonal fruit, and honey.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "GREEK YOGURTH BOWL - VEGGIE Y SIN GLUTEN",
+    "es_descripcion": "Yogurt griego, granola casera sin gluten, banana y otra fruta de estación y miel.",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-68",
     "precio": "1,90",
     "cat_nombre": "ESPRESSO",
     "cat_descripcion": "",
@@ -893,7 +1075,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-56",
+    "id": "POPIS-69",
     "precio": "2,40",
     "cat_nombre": "ESPRESSO DOBLE",
     "cat_descripcion": "",
@@ -907,7 +1089,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-57",
+    "id": "POPIS-70",
     "precio": "2,40",
     "cat_nombre": "TALLAT",
     "cat_descripcion": "",
@@ -921,7 +1103,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-58",
+    "id": "POPIS-71",
     "precio": "2,80",
     "cat_nombre": "AMERICANO",
     "cat_descripcion": "",
@@ -935,7 +1117,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-59",
+    "id": "POPIS-72",
     "precio": "2,90",
     "cat_nombre": "LATTE",
     "cat_descripcion": "",
@@ -949,7 +1131,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-60",
+    "id": "POPIS-73",
     "precio": "2,90",
     "cat_nombre": "CAPUCCINO",
     "cat_descripcion": "",
@@ -963,7 +1145,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-61",
+    "id": "POPIS-74",
     "precio": "3,50",
     "cat_nombre": "FLAT WHITE",
     "cat_descripcion": "",
@@ -977,7 +1159,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-62",
+    "id": "POPIS-75",
     "precio": "3,90",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
@@ -991,7 +1173,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-63",
+    "id": "POPIS-76",
     "precio": "4,40",
     "cat_nombre": "VAINILLA MATCHA LATTE",
     "cat_descripcion": "",
@@ -1005,7 +1187,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-64",
+    "id": "POPIS-77",
     "precio": "3,40",
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
@@ -1019,7 +1201,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-65",
+    "id": "POPIS-78",
     "precio": "3,40",
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
@@ -1033,7 +1215,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-66",
+    "id": "POPIS-79",
     "precio": "3,40",
     "cat_nombre": "LATTE DE MOCCA",
     "cat_descripcion": "",
@@ -1047,7 +1229,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-67",
+    "id": "POPIS-80",
     "precio": "3,90",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
@@ -1061,7 +1243,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-68",
+    "id": "POPIS-81",
     "precio": "3,90",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
@@ -1075,7 +1257,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-69",
+    "id": "POPIS-82",
     "precio": "4,40",
     "cat_nombre": "DIRTY CHAI LATTE",
     "cat_descripcion": "",
@@ -1089,7 +1271,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-70",
+    "id": "POPIS-83",
     "precio": "2,40",
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
@@ -1103,7 +1285,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-71",
+    "id": "POPIS-84",
     "precio": "3,50",
     "cat_nombre": "BATCH BREW",
     "cat_descripcion": "",
@@ -1117,7 +1299,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-72",
+    "id": "POPIS-85",
     "precio": "3,90",
     "cat_nombre": "PURPLE LATTE",
     "cat_descripcion": "",
@@ -1131,7 +1313,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-73",
+    "id": "POPIS-86",
     "precio": "3,90",
     "cat_nombre": "PINK LATTE",
     "cat_descripcion": "",
@@ -1145,7 +1327,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-74",
+    "id": "POPIS-87",
     "precio": "3,70",
     "cat_nombre": "GOLDEN MILK",
     "cat_descripcion": "",
@@ -1159,7 +1341,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-75",
+    "id": "POPIS-88",
     "precio": "4,50",
     "cat_nombre": "LATTE FRED",
     "cat_descripcion": "",
@@ -1173,7 +1355,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-76",
+    "id": "POPIS-89",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
@@ -1187,7 +1369,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-77",
+    "id": "POPIS-90",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
@@ -1201,7 +1383,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-78",
+    "id": "POPIS-91",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE MOCCA",
     "cat_descripcion": "",
@@ -1215,7 +1397,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-79",
+    "id": "POPIS-92",
     "precio": "4,50",
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
@@ -1229,7 +1411,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-80",
+    "id": "POPIS-93",
     "precio": 4.7,
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
@@ -1243,7 +1425,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-81",
+    "id": "POPIS-94",
     "precio": "5,00",
     "cat_nombre": "LATTE FRED DE VAINILLA MATCHA",
     "cat_descripcion": "",
@@ -1257,7 +1439,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-82",
+    "id": "POPIS-95",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
@@ -1271,7 +1453,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-83",
+    "id": "POPIS-96",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
@@ -1285,7 +1467,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-84",
+    "id": "POPIS-97",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
@@ -1299,7 +1481,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-85",
+    "id": "POPIS-98",
     "precio": "4,70",
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
@@ -1313,7 +1495,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-86",
+    "id": "POPIS-99",
     "precio": "5,20",
     "cat_nombre": "ICED DIRTY CHAI LATTE",
     "cat_descripcion": "",
@@ -1327,7 +1509,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-87",
+    "id": "POPIS-100",
     "precio": 5,
     "cat_nombre": "ICED PURPLE LATTE",
     "cat_descripcion": "",
@@ -1341,7 +1523,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-88",
+    "id": "POPIS-101",
     "precio": 5,
     "cat_nombre": "ICED PINK LATTE",
     "cat_descripcion": "",
@@ -1355,7 +1537,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-89",
+    "id": "POPIS-102",
     "precio": "4,70",
     "cat_nombre": "ICED GOLDEN MILK",
     "cat_descripcion": "",
@@ -1369,7 +1551,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-90",
+    "id": "POPIS-103",
     "precio": "4,5",
     "cat_nombre": "COLD BREW",
     "cat_descripcion": "",
