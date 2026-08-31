@@ -837,48 +837,6 @@ const menu_datos = [
     "local": "focacceria"
   },
   {
-    "id": "POPIS-52",
-    "precio": "6,5",
-    "cat_nombre": "FRESH SMOOTHIE ",
-    "cat_descripcion": "Espinacs, plàtan, llimona i gingebre.",
-    "cat_categoria": "ESMORZARS · BRUNCH",
-    "en_nombre": "FRESH SMOOTHIE ",
-    "en_descripcion": "Spinach, banana, lemon, and ginger.",
-    "en_categoria": "BREAKFAST - BRUNCH",
-    "es_nombre": "FRESH SMOOTHIE ",
-    "es_descripcion": "Espinaca, Banana, limón, jengibre",
-    "es_categoria": "DESAYUNOS - BRUNCH",
-    "local": "bolleria"
-  },
-  {
-    "id": "POPIS-53",
-    "precio": "6,9",
-    "cat_nombre": "BERRYS SMOOTHIE",
-    "cat_descripcion": "Plàtan, fruits vermells, xia i beguda vegetal d'ametlla.\n+ PROTEÏNA 1,50 €",
-    "cat_categoria": "ESMORZARS · BRUNCH",
-    "en_nombre": "BERRYS SMOOTHIE",
-    "en_descripcion": "Banana, mixed berries, chia, and almond plant-based milk.\n+ PROTEIN €1.50",
-    "en_categoria": "BREAKFAST - BRUNCH",
-    "es_nombre": "BERRYS SMOOTHIE",
-    "es_descripcion": "Banana, frutos rojos, chìa, bebida vegetal de almendras\n+ PROTEINA 1,5€",
-    "es_categoria": "DESAYUNOS - BRUNCH",
-    "local": "bolleria"
-  },
-  {
-    "id": "POPIS-54",
-    "precio": "6,9",
-    "cat_nombre": "PEANUT SMOOTHIE",
-    "cat_descripcion": "Plàtan, mantega de cacauet, cacau i beguda vegetal d'ametlla.\n+ PROTEÏNA 1,50 €",
-    "cat_categoria": "ESMORZARS · BRUNCH",
-    "en_nombre": "PEANUT SMOOTHIE",
-    "en_descripcion": "Banana, peanut butter, cocoa, and almond plant-based milk.\n+ PROTEIN €1.50",
-    "en_categoria": "BREAKFAST - BRUNCH",
-    "es_nombre": "PEANUT SMOOTHIE",
-    "es_descripcion": "Banana, mantequilla de cacahuete, cacao, bebida vegetal de almendras\n+ PROTEINA 1,5€",
-    "es_categoria": "DESAYUNOS - BRUNCH",
-    "local": "bolleria"
-  },
-  {
     "id": "POPIS-55",
     "precio": 8,
     "cat_nombre": "AVOCADO TOAST - VEGAN",
@@ -950,34 +908,6 @@ const menu_datos = [
   },
   {
     "id": "POPIS-60",
-    "precio": "6,9",
-    "cat_nombre": "HONEY WALNUT TOAST - VEGGIE",
-    "cat_descripcion": "Pa de llavors torrat, formatge cremós, nous i mel.",
-    "cat_categoria": "ESMORZARS · BRUNCH",
-    "en_nombre": "HONEY WALNUT TOAST - VEGGIE",
-    "en_descripcion": "Toasted seeded bread, cream cheese, walnuts, and honey.",
-    "en_categoria": "BREAKFAST - BRUNCH",
-    "es_nombre": "HONEY WALNUT TOAST - VEGGIE",
-    "es_descripcion": "Pan de semillas tostado, queso crema, nueces y miel.",
-    "es_categoria": "DESAYUNOS - BRUNCH",
-    "local": "bolleria"
-  },
-  {
-    "id": "POPIS-61",
-    "precio": 6,
-    "cat_nombre": "POPIS TOAST - VEGGIE",
-    "cat_descripcion": "Pa de llavors torrat, mantega, dolç de llet i sal en escates.",
-    "cat_categoria": "ESMORZARS · BRUNCH",
-    "en_nombre": "POPIS TOAST - VEGGIE",
-    "en_descripcion": "Toasted seeded bread, butter, dulce de leche, and flaky sea salt.",
-    "en_categoria": "BREAKFAST - BRUNCH",
-    "es_nombre": "POPIS TOAST - VEGGIE",
-    "es_descripcion": "Pan de semillas tostado, mantequilla, dulce de leche y sal en esacamas.",
-    "es_categoria": "DESAYUNOS - BRUNCH",
-    "local": "bolleria"
-  },
-  {
-    "id": "POPIS-62",
     "precio": 8.9,
     "cat_nombre": "BLUE CHIA BOWL - VEGAN Y SIN GLUTEN",
     "cat_descripcion": "Púding de xia amb espirulina blava, plàtan i una altra fruita de temporada, nous, coco ratllat, mantega de cacauet i xarop d'atzavara.",
@@ -991,7 +921,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-63",
+    "id": "POPIS-61",
     "precio": "10,5",
     "cat_nombre": "AÇAI BOWL - VEGAN Y SIN GLUTEN",
     "cat_descripcion": "Base d'açaí, granola casolana sense gluten, plàtan, coco ratllat i mantega de cacauet.",
@@ -1005,7 +935,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-64",
+    "id": "POPIS-62",
     "precio": 8.5,
     "cat_nombre": "GREEK YOGURTH BOWL - VEGGIE Y SIN GLUTEN",
     "cat_descripcion": "Iogurt grec, granola casolana sense gluten, plàtan, fruita de temporada i mel.",
@@ -1019,7 +949,49 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-65",
+    "id": "POPIS-52",
+    "precio": "6,5",
+    "cat_nombre": "FRESH SMOOTHIE ",
+    "cat_descripcion": "Espinacs, plàtan, llimona i gingebre.",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "FRESH SMOOTHIE ",
+    "en_descripcion": "Spinach, banana, lemon, and ginger.",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "FRESH SMOOTHIE ",
+    "es_descripcion": "Espinaca, Banana, limón, jengibre",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-53",
+    "precio": "6,9",
+    "cat_nombre": "BERRYS SMOOTHIE",
+    "cat_descripcion": "Plàtan, fruits vermells, xia i beguda vegetal d'ametlla.\n+ PROTEÏNA 1,50 €",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "BERRYS SMOOTHIE",
+    "en_descripcion": "Banana, mixed berries, chia, and almond plant-based milk.\n+ PROTEIN €1.50",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "BERRYS SMOOTHIE",
+    "es_descripcion": "Banana, frutos rojos, chìa, bebida vegetal de almendras\n+ PROTEINA 1,5€",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-54",
+    "precio": "4,5",
+    "cat_nombre": "SUC DE TORONJA",
+    "cat_descripcion": "Suc de taronja natural acabat d’esprémer ",
+    "cat_categoria": "ESMORZARS · BRUNCH",
+    "en_nombre": "ORANGE JUICE",
+    "en_descripcion": "Freshly squeezed orange juice",
+    "en_categoria": "BREAKFAST - BRUNCH",
+    "es_nombre": "JUGO DE NARANJA",
+    "es_descripcion": "Jugo de naranja exprimido natural",
+    "es_categoria": "DESAYUNOS - BRUNCH",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-63",
     "precio": "1,90",
     "cat_nombre": "ESPRESSO",
     "cat_descripcion": "",
@@ -1033,7 +1005,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-66",
+    "id": "POPIS-64",
     "precio": "2,40",
     "cat_nombre": "ESPRESSO DOBLE",
     "cat_descripcion": "",
@@ -1047,7 +1019,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-67",
+    "id": "POPIS-65",
     "precio": "2,40",
     "cat_nombre": "TALLAT",
     "cat_descripcion": "",
@@ -1061,7 +1033,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-68",
+    "id": "POPIS-66",
     "precio": "2,80",
     "cat_nombre": "AMERICANO",
     "cat_descripcion": "",
@@ -1075,7 +1047,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-69",
+    "id": "POPIS-67",
     "precio": "2,90",
     "cat_nombre": "LATTE",
     "cat_descripcion": "",
@@ -1089,7 +1061,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-70",
+    "id": "POPIS-68",
     "precio": "2,90",
     "cat_nombre": "CAPUCCINO",
     "cat_descripcion": "",
@@ -1103,7 +1075,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-71",
+    "id": "POPIS-69",
     "precio": "3,50",
     "cat_nombre": "FLAT WHITE",
     "cat_descripcion": "",
@@ -1117,7 +1089,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-72",
+    "id": "POPIS-70",
     "precio": "3,90",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
@@ -1131,7 +1103,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-73",
+    "id": "POPIS-71",
     "precio": "4,40",
     "cat_nombre": "VAINILLA MATCHA LATTE",
     "cat_descripcion": "",
@@ -1145,7 +1117,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-74",
+    "id": "POPIS-72",
     "precio": "3,40",
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
@@ -1159,7 +1131,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-75",
+    "id": "POPIS-73",
     "precio": "3,40",
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
@@ -1173,7 +1145,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-76",
+    "id": "POPIS-74",
     "precio": "3,40",
     "cat_nombre": "LATTE DE MOCCA",
     "cat_descripcion": "",
@@ -1187,7 +1159,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-77",
+    "id": "POPIS-75",
     "precio": "3,90",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
@@ -1201,7 +1173,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-78",
+    "id": "POPIS-76",
     "precio": "3,90",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
@@ -1215,7 +1187,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-79",
+    "id": "POPIS-77",
     "precio": "4,40",
     "cat_nombre": "DIRTY CHAI LATTE",
     "cat_descripcion": "",
@@ -1229,7 +1201,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-80",
+    "id": "POPIS-78",
     "precio": "2,40",
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
@@ -1243,7 +1215,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-81",
+    "id": "POPIS-79",
     "precio": "3,50",
     "cat_nombre": "BATCH BREW",
     "cat_descripcion": "",
@@ -1257,7 +1229,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-82",
+    "id": "POPIS-80",
     "precio": "3,90",
     "cat_nombre": "PURPLE LATTE",
     "cat_descripcion": "",
@@ -1271,7 +1243,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-83",
+    "id": "POPIS-81",
     "precio": "3,90",
     "cat_nombre": "PINK LATTE",
     "cat_descripcion": "",
@@ -1285,7 +1257,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-84",
+    "id": "POPIS-82",
     "precio": "3,70",
     "cat_nombre": "GOLDEN MILK",
     "cat_descripcion": "",
@@ -1299,7 +1271,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-85",
+    "id": "POPIS-83",
     "precio": "4,50",
     "cat_nombre": "LATTE FRED",
     "cat_descripcion": "",
@@ -1313,7 +1285,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-86",
+    "id": "POPIS-84",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
@@ -1327,7 +1299,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-87",
+    "id": "POPIS-85",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
@@ -1341,7 +1313,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-88",
+    "id": "POPIS-86",
     "precio": "4,80",
     "cat_nombre": "LATTE FRED DE MOCCA",
     "cat_descripcion": "",
@@ -1355,7 +1327,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-89",
+    "id": "POPIS-87",
     "precio": "4,50",
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
@@ -1369,7 +1341,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-90",
+    "id": "POPIS-88",
     "precio": 4.7,
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
@@ -1383,7 +1355,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-91",
+    "id": "POPIS-89",
     "precio": "5,00",
     "cat_nombre": "LATTE FRED DE VAINILLA MATCHA",
     "cat_descripcion": "",
@@ -1397,7 +1369,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-92",
+    "id": "POPIS-90",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
@@ -1411,7 +1383,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-93",
+    "id": "POPIS-91",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
@@ -1425,7 +1397,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-94",
+    "id": "POPIS-92",
     "precio": "5,00",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
@@ -1439,7 +1411,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-95",
+    "id": "POPIS-93",
     "precio": "4,70",
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
@@ -1453,7 +1425,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-96",
+    "id": "POPIS-94",
     "precio": "5,20",
     "cat_nombre": "ICED DIRTY CHAI LATTE",
     "cat_descripcion": "",
@@ -1467,7 +1439,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-97",
+    "id": "POPIS-95",
     "precio": 5,
     "cat_nombre": "ICED PURPLE LATTE",
     "cat_descripcion": "",
@@ -1481,7 +1453,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-98",
+    "id": "POPIS-96",
     "precio": 5,
     "cat_nombre": "ICED PINK LATTE",
     "cat_descripcion": "",
@@ -1495,7 +1467,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-99",
+    "id": "POPIS-97",
     "precio": "4,70",
     "cat_nombre": "ICED GOLDEN MILK",
     "cat_descripcion": "",
@@ -1509,7 +1481,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-100",
+    "id": "POPIS-98",
     "precio": "4,5",
     "cat_nombre": "COLD BREW",
     "cat_descripcion": "",
