@@ -1,3 +1,41 @@
+// ── Idioma ─────────────────────────────────────────────────────────────────
+const IDIOMAS_SOPORTADOS = ['es', 'cat', 'en']
+
+function detectarIdioma() {
+  const candidatos = [
+    ...(navigator.languages || []),
+    navigator.language,
+    navigator.userLanguage,
+    navigator.browserLanguage,
+    navigator.systemLanguage
+  ].filter(Boolean)
+
+  for (const l of candidatos) {
+    const corto = String(l).toLowerCase().split('-')[0]
+    const norm = corto === 'ca' ? 'cat' : corto
+    if (IDIOMAS_SOPORTADOS.includes(norm)) return norm
+  }
+  return 'es'
+}
+
+function idiomaActivo() {
+  return localStorage.getItem('idioma_preferido') || detectarIdioma()
+}
+
+function renderLangSwitcher(container, activo, onChange) {
+  if (!container) return
+  container.innerHTML = IDIOMAS_SOPORTADOS.map(l =>
+    `<button class="lang-btn ${l === activo ? 'active' : ''}" data-lang="${l}" type="button">${l.toUpperCase()}</button>`
+  ).join('')
+  container.querySelectorAll('.lang-btn').forEach(b => {
+    b.onclick = () => {
+      const nuevo = b.dataset.lang
+      localStorage.setItem('idioma_preferido', nuevo)
+      onChange(nuevo)
+    }
+  })
+}
+
 // Título principal dinámico
 const palabras = [
   'Bienvenido',   // Español
@@ -1499,8 +1537,18 @@ const menu_datos = [
 
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
-  const idioma = sessionStorage.getItem('menu') || params.get('v') || 'es'
-  const local = sessionStorage.getItem('local') || params.get('c') || 'todo'  // Usar 'todo' si no hay valor
+  const idioma = params.get('v') || localStorage.getItem('idioma_preferido') || sessionStorage.getItem('idioma') || 'es'
+  const local = params.get('c') || sessionStorage.getItem('local') || 'todo'
+
+  // Sincronizar preferencia con lo que se está mostrando
+  localStorage.setItem('idioma_preferido', idioma)
+
+  // Switcher de idioma en la esquina
+  renderLangSwitcher(document.getElementById('lang-switcher'), idioma, (nuevo) => {
+    const p = new URLSearchParams(window.location.search)
+    p.set('v', nuevo)
+    window.location.search = p.toString()
+  })
 
   // Titulo del menu
   const titulo = locales_nombres[idioma] && locales_nombres[idioma][local] || 'Selecciona un menú'

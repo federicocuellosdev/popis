@@ -214,6 +214,52 @@ body {
     font-size: .8rem;
 }
 
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+.lang-switcher .lang-btn {
+    background: transparent;
+    color: var(--color-blanco);
+    border: 1.5px solid var(--color-blanco);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-family: 'quicksand medium', sans-serif;
+    font-size: .85rem;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .2s ease;
+    min-width: 48px;
+}
+
+.lang-switcher .lang-btn:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+.lang-switcher .lang-btn.active {
+    background: var(--color-blanco);
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.lang-switcher-fixed {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+    margin: 0;
+    gap: 6px;
+}
+
+.lang-switcher-fixed .lang-btn {
+    padding: 5px 10px;
+    font-size: .75rem;
+    min-width: 40px;
+}
+
 #direccion hr {
     margin: 30px 0;
     border: 1px solid var(--color-blanco);

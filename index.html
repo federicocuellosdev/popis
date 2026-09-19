@@ -18,6 +18,8 @@
                 alt="Popis - Focacceria de carne y Specialty Coffe & Bakery">
             <h2 id="typing"></h2>
 
+            <div class="lang-switcher" id="lang-switcher"></div>
+
             <div class="botones" id="botones">
             </div>
 
@@ -64,30 +66,27 @@
     <script src="./src/main.js"></script>
     <script>tipear()</script>
     <script>
-        // función flecha idioma()
-        const idioma = () => (navigator.language || navigator.userLanguage).split('-')[0];
-
-        // textos de los botones según idioma
         const traducciones = {
-            es: { menu: "Menú", reserva: "Realizar reserva" },
-            en: { menu: "Menu", reserva: "Make a reservation" },
-            ca: { menu: "Menú", reserva: "Fer una reserva" }, // catalán
+            es:  { menu: "Menú", reserva: "Realizar reserva" },
+            en:  { menu: "Menu", reserva: "Make a reservation" },
+            cat: { menu: "Menú", reserva: "Fer una reserva" }
         };
 
-        // obtener idioma actual (por defecto español si no está en la lista)
-        const lang = traducciones[idioma()] ? idioma() : "es";
+        const reserva = () => window.open('https://wa.me/34655793149', '_blank');
 
-        // generar botones
-        const contenedor = document.getElementById("botones");
-        contenedor.innerHTML = `
-            <button onclick="menu('${lang}','menu')">${traducciones[lang].menu}</button>
-            <button onclick="reserva('${lang}')">${traducciones[lang].reserva}</button>
-        `;
-
-        const reserva = () => {
-            window.open('https://wa.me/34655793149', '_blank')
+        function renderMainBtn(lang) {
+            document.getElementById('botones').innerHTML = `
+                <button onclick="menu('${lang}','menu')">${traducciones[lang].menu}</button>
+                <button onclick="reserva('${lang}')">${traducciones[lang].reserva}</button>
+            `;
         }
 
+        function setupHomeLang(lang) {
+            renderMainBtn(lang);
+            renderLangSwitcher(document.getElementById('lang-switcher'), lang, setupHomeLang);
+        }
+
+        setupHomeLang(idiomaActivo());
     </script>
 </body>
 
