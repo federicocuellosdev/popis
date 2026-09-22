@@ -158,8 +158,18 @@ const recarga = () => {
   sessionStorage.clear()
 }
 
-// Menu
-const menu_datos = [
+// Menu — helper: marcar bebidas como 'ambos' (aparecen en focacceria y bolleria)
+const _marcarBebidasAmbos = (items) => {
+  const KEYWORDS = ['BEBIDAS', 'BEGUDES', 'BEVERAGES', 'COLD DRINKS', 'DRINKS ALCOHOL', 'NON-ALCOHOLIC', 'VINO', 'VINS', 'VI', 'WINE', 'NATURAL WINES']
+  items.forEach(p => {
+    const cats = [p.es_categoria, p.cat_categoria, p.en_categoria].map(c => (c || '').toUpperCase())
+    const esBebida = cats.some(c => KEYWORDS.some(k => c === k || c.startsWith(k + ' ') || c.endsWith(' ' + k) || c.includes(' ' + k + ' ')))
+    if (esBebida) p.local = 'ambos'
+  })
+  return items
+}
+
+const menu_datos = _marcarBebidasAmbos([
   {
     "id": "POPIS-01",
     "precio": "12,50",
@@ -1532,9 +1542,9 @@ const menu_datos = [
     "es_categoria": "BEBIDAS FRIAS",
     "local": "bolleria"
   }
-]
+])
 
-
+// Extender el filtro por local para tratar 'ambos' como coincidencia con cualquier local
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
   const idioma = params.get('v') || localStorage.getItem('idioma_preferido') || sessionStorage.getItem('idioma') || 'es'
@@ -1569,9 +1579,9 @@ const menu_cargar = () => {
 
   // Filtrar los items si el local no es 'todo'
   menu_datos.forEach(item => {
-    // Si el valor de local es 'todo', agregar todos los items
-    if (local === 'todo' || item.local === local) {
-      const key = item.local
+    // 'ambos' significa que el item aparece en las dos cartas
+    if (local === 'todo' || item.local === local || item.local === 'ambos') {
+      const key = item.local === 'ambos' ? local : item.local
       if (!locales[key]) locales[key] = []
       locales[key].push(item)
     }
