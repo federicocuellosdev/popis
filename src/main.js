@@ -1583,13 +1583,12 @@ const menu_cargar = () => {
 
   // Descripción del menu
   const descripciones = {
-    es: "Realizar pedido en caja",
-    cat: "Realitzar la comanda a caixa",
-    en: "Place order at checkout"
-
+    es: "El pedido se hace en la barra",
+    cat: "La comanda es fa a la barra",
+    en: "Orders are placed at the bar"
   }
 
-  document.querySelector('#descripcion_texto').textContent = (descripciones[idioma] || "Realizar pedido en caja").toUpperCase()
+  document.querySelector('#descripcion_texto').textContent = descripciones[idioma] || descripciones.es
 
   // Agrupar items por local
   const locales = {}

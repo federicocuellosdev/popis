@@ -120,26 +120,37 @@ body {
     margin-bottom: 40px;
 }
 
+/* Info box "El pedido se hace en la barra" — estilo igual que v2 (compacto, cream con borde izq) */
 .menu_descripcion {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    background-color: var(--color-blanco);
-    padding: 10px 30px;
-    margin-bottom: 30px;
-    border-radius: 100px;
+    gap: 10px;
+    margin: 0 auto 60px;
+    padding: 10px 14px;
+    background: rgba(255, 245, 225, 0.08);
+    border-left: 3px solid var(--color-blanco);
+    border-radius: 6px;
+    max-width: fit-content;
+}
+
+.menu_descripcion p {
+    margin: 0;
+    color: var(--color-blanco);
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    font-family: 'quicksand medium', sans-serif;
 }
 
 .menu_descripcion .descripcion_icono {
-    margin-right: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .menu_descripcion .descripcion_icono svg {
-    color: var(--color-primario);
-}
-
-.menu_descripcion .descripcion_texto p {
-    font-family: 'tt chocolate', sans-serif !important;
-    color: #474747;
+    color: var(--color-blanco);
+    width: 1.1em;
+    height: 1.1em;
 }
 
 .menu {
