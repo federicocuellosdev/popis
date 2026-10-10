@@ -158,30 +158,19 @@ const recarga = () => {
   sessionStorage.clear()
 }
 
-// Menu — helper: marcar bebidas como 'ambos' (aparecen en focacceria y bolleria)
-const _marcarBebidasAmbos = (items) => {
-  const KEYWORDS = ['BEBIDAS', 'BEGUDES', 'BEVERAGES', 'COLD DRINKS', 'DRINKS ALCOHOL', 'NON-ALCOHOLIC', 'VINO', 'VINS', 'VI', 'WINE', 'NATURAL WINES']
-  items.forEach(p => {
-    const cats = [p.es_categoria, p.cat_categoria, p.en_categoria].map(c => (c || '').toUpperCase())
-    const esBebida = cats.some(c => KEYWORDS.some(k => c === k || c.startsWith(k + ' ') || c.endsWith(' ' + k) || c.includes(' ' + k + ' ')))
-    if (esBebida) p.local = 'ambos'
-  })
-  return items
-}
-
-const menu_datos = _marcarBebidasAmbos([
+const menu_datos = [
   {
     "id": "POPIS-01",
     "precio": "12,50",
     "cat_nombre": "LESSEPS",
     "cat_descripcion": "Carn braseada i esfilagarsada - crema de festucs - ceba caramel·litzades.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "LESSEPS",
     "en_descripcion": "Braised & pulled beef - pistachio cream - caramelized onions.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "LESSEPS",
     "es_descripcion": "Carne desmechada - crema de pistacho - cebolla Caramelizada.",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -189,13 +178,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "12,50",
     "cat_nombre": "DEL SOL",
     "cat_descripcion": "Carn braseada i esfilagarsada - Malbec glacejat - cebes caramel·litzades.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "DEL SOL",
     "en_descripcion": "Braised & pulled beef - Glazed Malbec - caramelized onions.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "DEL SOL",
     "es_descripcion": "Carne desmechada - Malbec glaseado - cebolla caramelizada.",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -203,13 +192,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "13.5",
     "cat_nombre": "DEL DIAMANT",
     "cat_descripcion": "Carn braseada i esfilagarsada - pesto rosa - albergínies en conserva - formatge Edam.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "DEL DIAMANT",
     "en_descripcion": "Braised & pulled beef - pink pesto - preserved eggplants - Edam cheese.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "DEL DIAMANT",
     "es_descripcion": "Carne desmechada - pesto rosa - berenjenas en conserva - queso Edam.",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -217,13 +206,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "13,50",
     "cat_nombre": "ROVIRA",
     "cat_descripcion": "Carn desfilada - crema de bolets - cebes encurtides - formatge Edam.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "ROVIRA",
     "en_descripcion": "Shredded meat - mushroom cream - pickled onions - Edam cheese.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "ROVIRA",
     "es_descripcion": "Carne desmechada - crema de setas - cebollas encurtidas - queso Edam",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -231,13 +220,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "15",
     "cat_nombre": "PERLA",
     "cat_descripcion": "Carn de roast beef - melmelada de pebrots - formatge brie - ruca.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "PERLA",
     "en_descripcion": "Roast beef - pepper jam - Brie cheese - arugula.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "PERLA",
     "es_descripcion": "Carne roast beef - mermelada de pimientos - queso brie - rúcula",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -245,13 +234,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "15",
     "cat_nombre": "CHIMI",
     "cat_descripcion": "Carn de roast beef - chimichurri - formatge Edam - tomàquet fresc - ruca - ceba cruixent.",
-    "cat_categoria": "FOCACCIAS AMB CARN FUMADA",
+    "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "CHIMI",
     "en_descripcion": "Roast beef - chimichurri - Edam cheese - fresh tomato - arugula - crispy onions.",
-    "en_categoria": "FOCACCIAS WITH SMOKED MEAT",
+    "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "CHIMI",
     "es_descripcion": "Carne roast beef - chimichurri - queso Edam - tomate fresco - rúcula - cebolla crispy",
-    "es_categoria": "FOCACCIAS DE CARNE AHUMADA",
+    "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
   {
@@ -312,7 +301,7 @@ const menu_datos = _marcarBebidasAmbos([
   },
   {
     "id": "POPIS-11",
-    "precio": "11.5",
+    "precio": "12",
     "cat_nombre": "DE LA REVOLUCIO",
     "cat_descripcion": "Stracciatella - crema de festucs - mortadella italiana.",
     "cat_categoria": "FOCACCIAS AMB EMBOTITS",
@@ -332,7 +321,7 @@ const menu_datos = _marcarBebidasAmbos([
     "cat_categoria": "FOCACCIAS AMB EMBOTITS",
     "en_nombre": "MOZART",
     "en_descripcion": "Pesto Cream - Cooked ham - Edam cheese.",
-    "en_categoria": "FOCACCIAS WITH CHARCUTERIE",
+    "en_categoria": "FOCACCIAS WITH COLD CUTS",
     "es_nombre": "MOZART",
     "es_descripcion": "Crema de pesto - jamón dulce -queso Edam",
     "es_categoria": "FOCACCIAS DE EMBUTIDOS",
@@ -346,7 +335,7 @@ const menu_datos = _marcarBebidasAmbos([
     "cat_categoria": "FOCACCIAS AMB EMBOTITS",
     "en_nombre": "RASPALL",
     "en_descripcion": "Pesto cream - stracciatella - prosciutto - confit tomatoes -arugula.",
-    "en_categoria": "FOCACCIAS WITH CHARCUTERIE",
+    "en_categoria": "FOCACCIAS WITH COLD CUTS",
     "es_nombre": "RASPALL",
     "es_descripcion": "Crema de pesto - stracciatella - prosciutto - tomates confitados - rúcula",
     "es_categoria": "FOCACCIAS DE EMBUTIDOS",
@@ -355,29 +344,29 @@ const menu_datos = _marcarBebidasAmbos([
   {
     "id": "POPIS-14",
     "precio": "11",
-    "cat_nombre": "VERDI (VEGANA)",
+    "cat_nombre": "VERDI",
     "cat_descripcion": "Hummus de remolatxa - cebes caramel·litzades - tomàquets confitats - ruca.",
-    "cat_categoria": "FOCACCIAS VEGANES",
-    "en_nombre": "VERDI (VEGANA)",
+    "cat_categoria": "FOCACCIAS VEGANAS",
+    "en_nombre": "VERDI",
     "en_descripcion": "Beet hummus - caramelized onions - confit tomatoes - arugula.",
     "en_categoria": "VEGAN FOCACCIAS",
-    "es_nombre": "VERDI (VEGANA)",
+    "es_nombre": "VERDI",
     "es_descripcion": "Hummus de remolacha - cebollas Caramelizadas - tomates confitados - rúcula.",
-    "es_categoria": "FOCACCIAS VEGANAS",
+    "es_categoria": "FOCACCIAS VEGANES",
     "local": "focacceria"
   },
   {
     "id": "POPIS-15",
     "precio": "12",
-    "cat_nombre": "BONAVISTA (VEGANA)",
+    "cat_nombre": "BONAVISTA",
     "cat_descripcion": "Mostassa dolça - peres caramel·litzades amb canyella - nous - ruca (Suggeriment: Extra de formatge Roquefort + 1,50 €)",
-    "cat_categoria": "FOCACCIAS VEGANES",
-    "en_nombre": "BONAVISTA (VEGANA)",
+    "cat_categoria": "FOCACCIAS VEGANAS",
+    "en_nombre": "BONAVISTA",
     "en_descripcion": "Sweet mustard - cinnamon caramelized pears - walnuts - arugula  (Suggested: Extra Roquefort cheese + €1.50)",
     "en_categoria": "VEGAN FOCACCIAS",
-    "es_nombre": "BONAVISTA (VEGANA)",
+    "es_nombre": "BONAVISTA",
     "es_descripcion": "Mostaza dulce - peras caramelizadas con canela - nueces - rúcula (Sugerencia: Extra Queso Roquefort + €1,50)",
-    "es_categoria": "FOCACCIAS VEGANAS",
+    "es_categoria": "FOCACCIAS VEGANES",
     "local": "focacceria"
   },
   {
@@ -385,13 +374,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "12",
     "cat_nombre": "FONTANA",
     "cat_descripcion": "Cremós de bolets - tomàquets confitats - straciatella - ruca.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCACCIAS VEGETARIANAS",
     "en_nombre": "FONTANA",
     "en_descripcion": "Creamy oyster mushrooms - confit tomatoes - stracciatella - arugula.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
     "es_nombre": "FONTANA",
     "es_descripcion": "Crema de setas - tomates confitados - straciatella - rúcula.",
-    "es_categoria": "FOCACCIAS VEGETARIANAS",
+    "es_categoria": "FOCACCIAS VEGETARIANES",
     "local": "focacceria"
   },
   {
@@ -399,13 +388,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "12",
     "cat_nombre": "TEROL",
     "cat_descripcion": "Crema de pesto - stracciatella - carbassó - ruca.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCACCIAS VEGETARIANAS",
     "en_nombre": "TEROL",
     "en_descripcion": "Pesto cream - stracciatella - zucchini - arugula.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
     "es_nombre": "TEROL",
     "es_descripcion": "Crema de pesto - stracciatella - calabacín - rúcula.",
-    "es_categoria": "FOCACCIAS VEGETARIANAS",
+    "es_categoria": "FOCACCIAS VEGETARIANES",
     "local": "focacceria"
   },
   {
@@ -413,13 +402,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "15",
     "cat_nombre": "RIERA",
     "cat_descripcion": "Crema de bolets - xampinyons marinats - formatge brie - coleslaw.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCACCIAS VEGETARIANAS",
     "en_nombre": "RIERA",
     "en_descripcion": "Creamy mushroom sauce - marinated mushrooms - Brie cheese - coleslaw.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
     "es_nombre": "RIERA",
     "es_descripcion": "Crema de setas - champiñones marinados  - queso brie - coleslaw.",
-    "es_categoria": "FOCACCIAS VEGETARIANAS",
+    "es_categoria": "FOCACCIAS VEGETARIANES",
     "local": "focacceria"
   },
   {
@@ -427,41 +416,41 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "3.5",
     "cat_nombre": "OLIVES VERDES",
     "cat_descripcion": "",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "TAPES",
     "en_nombre": "GREEN OLIVES",
     "en_descripcion": "",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "OLIVAS VERDES",
     "es_descripcion": "",
-    "es_categoria": "ENTRANTES",
+    "es_categoria": "TAPAS",
     "local": "focacceria"
   },
   {
     "id": "POPIS-20",
     "precio": "5.4",
     "cat_nombre": "HUMMUS CLÀSSIC",
-    "cat_descripcion": "Hummus de cigrons amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "ENTRANTS",
+    "cat_descripcion": "Hummus de cigrons amb nachos de blat de moro cruixents  (Sense gluten)",
+    "cat_categoria": "TAPES",
     "en_nombre": "CLASSIC HUMMUS",
     "en_descripcion": "Classic hummus with crispy corn nachos  (Gluten-free)",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "HUMMUS CLÁSICO",
     "es_descripcion": "Hummus de garbanzos  con crujientes nachos de maiz (Sin gluten).",
-    "es_categoria": "ENTRANTES",
+    "es_categoria": "TAPAS",
     "local": "focacceria"
   },
   {
     "id": "POPIS-21",
     "precio": "5.9",
     "cat_nombre": "HUMMUS ROSA",
-    "cat_descripcion": "Hummus de remolatxa amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "ENTRANTS",
+    "cat_descripcion": "Hummus de remolatxa amb nachos de blat de moro cruixents  (Sense gluten)",
+    "cat_categoria": "TAPES",
     "en_nombre": "PINK HUMMUS",
     "en_descripcion": "beet hummus with crispy corn nachos  (Gluten-free).",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "HUMMUS ROSA",
     "es_descripcion": "Hummus de remolacha con crujientes nachos de maiz (Sin gluten).",
-    "es_categoria": "ENTRANTES",
+    "es_categoria": "TAPAS",
     "local": "focacceria"
   },
   {
@@ -469,13 +458,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "6.5",
     "cat_nombre": "SARDINES EN OLI D´OLIVA",
     "cat_descripcion": "Servides amb torradetes multicereal cruixents.",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "TAPES",
     "en_nombre": "SARDINES IN OLIVE OIL",
     "en_descripcion": "Served with crispy multigrain toast.",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "SARDINAS EN ACEITE DE OLIVA",
     "es_descripcion": "Servida con tostaditas multicereal cruijientes.",
-    "es_categoria": "ENTRANTES",
+    "es_categoria": "TAPAS",
     "local": "focacceria"
   },
   {
@@ -483,13 +472,13 @@ const menu_datos = _marcarBebidasAmbos([
     "precio": "7.95",
     "cat_nombre": "STRACCIATELLA ESTIL MEDITERRANI",
     "cat_descripcion": "Servida amb tomáquets confitats i torradetes multicereal cruixents.",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "TAPES",
     "en_nombre": "MEDITERRANEAN-STYLE STRACCIATELLA",
     "en_descripcion": "Servedwith confit tomatoes and crispy multigrain toast.",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "STRACCIATELLA AL ESTILO MEDITERRÁNEO",
     "es_descripcion": "Acompañada de tomates confitados y tostaditas multicereal.",
-    "es_categoria": "ENTRANTES",
+    "es_categoria": "TAPAS",
     "local": "focacceria"
   },
   {
@@ -802,7 +791,7 @@ const menu_datos = _marcarBebidasAmbos([
   },
   {
     "id": "POPIS-46",
-    "precio": "5 | 25",
+    "precio": "5 \n 25",
     "cat_nombre": "FIGA",
     "cat_descripcion": "Garnacha negra 70%, Cariñena",
     "cat_categoria": "VINS NATURALS",
@@ -830,7 +819,7 @@ const menu_datos = _marcarBebidasAmbos([
   },
   {
     "id": "POPIS-48",
-    "precio": "4.5 | 23",
+    "precio": "4.5 \n 23",
     "cat_nombre": "OH! BLANCO",
     "cat_descripcion": "Moscatel",
     "cat_categoria": "VINS NATURALS",
@@ -844,7 +833,7 @@ const menu_datos = _marcarBebidasAmbos([
   },
   {
     "id": "POPIS-49",
-    "precio": "5 | 25",
+    "precio": "5 \n 25",
     "cat_nombre": "OH! ORANGE",
     "cat_descripcion": "Garnacha Blanca",
     "cat_categoria": "VINS NATURALS",
@@ -858,7 +847,7 @@ const menu_datos = _marcarBebidasAmbos([
   },
   {
     "id": "POPIS-50",
-    "precio": "4.5 | 24",
+    "precio": "4.5 \n 24",
     "cat_nombre": "OH! ROJO",
     "cat_descripcion": "Garnacha Negra",
     "cat_categoria": "VINS NATURALS",
@@ -1570,8 +1559,9 @@ const menu_datos = _marcarBebidasAmbos([
     "es_categoria": "BEBIDAS FRIAS",
     "local": "bolleria"
   }
-])
-// Extender el filtro por local para tratar 'ambos' como coincidencia con cualquier local
+]
+
+// Filtro por local — usa la columna `local` del dato (focacceria | bolleria | ambos)
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
   const idioma = params.get('v') || localStorage.getItem('idioma_preferido') || sessionStorage.getItem('idioma') || 'es'
