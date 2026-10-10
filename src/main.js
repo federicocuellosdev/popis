@@ -346,7 +346,7 @@ const menu_datos = [
     "precio": "11",
     "cat_nombre": "VERDI",
     "cat_descripcion": "Hummus de remolatxa - cebes caramel·litzades - tomàquets confitats - ruca.",
-    "cat_categoria": "FOCACCIAS VEGANES",
+    "cat_categoria": "FOCÀCCIES VEGANES",
     "en_nombre": "VERDI",
     "en_descripcion": "Beet hummus - caramelized onions - confit tomatoes - arugula.",
     "en_categoria": "VEGAN FOCACCIAS",
@@ -360,7 +360,7 @@ const menu_datos = [
     "precio": "12",
     "cat_nombre": "BONAVISTA",
     "cat_descripcion": "Mostassa dolça - peres caramel·litzades amb canyella - nous - ruca (Suggeriment: Extra de formatge Roquefort + 1,50 €)",
-    "cat_categoria": "FOCACCIAS VEGANES",
+    "cat_categoria": "FOCÀCCIES VEGANES",
     "en_nombre": "BONAVISTA",
     "en_descripcion": "Sweet mustard - cinnamon caramelized pears - walnuts - arugula  (Suggested: Extra Roquefort cheese + €1.50)",
     "en_categoria": "VEGAN FOCACCIAS",
@@ -374,7 +374,7 @@ const menu_datos = [
     "precio": "12",
     "cat_nombre": "FONTANA",
     "cat_descripcion": "Cremós de bolets - tomàquets confitats - straciatella - ruca.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCÀCCIES VEGETARIANES",
     "en_nombre": "FONTANA",
     "en_descripcion": "Creamy oyster mushrooms - confit tomatoes - stracciatella - arugula.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
@@ -388,7 +388,7 @@ const menu_datos = [
     "precio": "12",
     "cat_nombre": "TEROL",
     "cat_descripcion": "Crema de pesto - stracciatella - carbassó - ruca.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCÀCCIES VEGETARIANES",
     "en_nombre": "TEROL",
     "en_descripcion": "Pesto cream - stracciatella - zucchini - arugula.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
@@ -402,7 +402,7 @@ const menu_datos = [
     "precio": "15",
     "cat_nombre": "RIERA",
     "cat_descripcion": "Crema de bolets - xampinyons marinats - formatge brie - coleslaw.",
-    "cat_categoria": "FOCACCIAS VEGETARIANES",
+    "cat_categoria": "FOCÀCCIES VEGETARIANES",
     "en_nombre": "RIERA",
     "en_descripcion": "Creamy mushroom sauce - marinated mushrooms - Brie cheese - coleslaw.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
@@ -416,13 +416,13 @@ const menu_datos = [
     "precio": "3.5",
     "cat_nombre": "OLIVES VERDES",
     "cat_descripcion": "",
-    "cat_categoria": "TAPES",
+    "cat_categoria": "ENTRANTS",
     "en_nombre": "GREEN OLIVES",
     "en_descripcion": "",
-    "en_categoria": "TAPAS",
+    "en_categoria": "STARTERS",
     "es_nombre": "OLIVAS VERDES",
     "es_descripcion": "",
-    "es_categoria": "TAPAS",
+    "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
   {
@@ -430,13 +430,13 @@ const menu_datos = [
     "precio": "5.4",
     "cat_nombre": "HUMMUS CLÀSSIC",
     "cat_descripcion": "Hummus de cigrons amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "TAPES",
+    "cat_categoria": "ENTRANTS",
     "en_nombre": "CLASSIC HUMMUS",
     "en_descripcion": "Classic hummus with crispy corn nachos  (Gluten-free)",
-    "en_categoria": "TAPAS",
+    "en_categoria": "STARTERS",
     "es_nombre": "HUMMUS CLÁSICO",
     "es_descripcion": "Hummus de garbanzos  con crujientes nachos de maiz (Sin gluten).",
-    "es_categoria": "TAPAS",
+    "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
   {
@@ -444,13 +444,13 @@ const menu_datos = [
     "precio": "5.9",
     "cat_nombre": "HUMMUS ROSA",
     "cat_descripcion": "Hummus de remolatxa amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "TAPES",
+    "cat_categoria": "ENTRANTS",
     "en_nombre": "PINK HUMMUS",
     "en_descripcion": "beet hummus with crispy corn nachos  (Gluten-free).",
-    "en_categoria": "TAPAS",
+    "en_categoria": "STARTERS",
     "es_nombre": "HUMMUS ROSA",
     "es_descripcion": "Hummus de remolacha con crujientes nachos de maiz (Sin gluten).",
-    "es_categoria": "TAPAS",
+    "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
   {
@@ -458,13 +458,13 @@ const menu_datos = [
     "precio": "6.5",
     "cat_nombre": "SARDINES EN OLI D´OLIVA",
     "cat_descripcion": "Servides amb torradetes multicereal cruixents.",
-    "cat_categoria": "TAPES",
+    "cat_categoria": "ENTRANTS",
     "en_nombre": "SARDINES IN OLIVE OIL",
     "en_descripcion": "Served with crispy multigrain toast.",
-    "en_categoria": "TAPAS",
+    "en_categoria": "STARTERS",
     "es_nombre": "SARDINAS EN ACEITE DE OLIVA",
     "es_descripcion": "Servida con tostaditas multicereal cruijientes.",
-    "es_categoria": "TAPAS",
+    "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
   {
@@ -472,13 +472,13 @@ const menu_datos = [
     "precio": "7.95",
     "cat_nombre": "STRACCIATELLA ESTIL MEDITERRANI",
     "cat_descripcion": "Servida amb tomáquets confitats i torradetes multicereal cruixents.",
-    "cat_categoria": "TAPES",
+    "cat_categoria": "ENTRANTS",
     "en_nombre": "MEDITERRANEAN-STYLE STRACCIATELLA",
     "en_descripcion": "Servedwith confit tomatoes and crispy multigrain toast.",
-    "en_categoria": "TAPAS",
+    "en_categoria": "STARTERS",
     "es_nombre": "STRACCIATELLA AL ESTILO MEDITERRÁNEO",
     "es_descripcion": "Acompañada de tomates confitados y tostaditas multicereal.",
-    "es_categoria": "TAPAS",
+    "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
   {
@@ -498,13 +498,13 @@ const menu_datos = [
   {
     "id": "POPIS-25",
     "precio": "5.5",
-    "cat_nombre": "BOQUET DE BROWNIE",
+    "cat_nombre": "BROWNIE",
     "cat_descripcion": "Brownie amb dulce de leche i pistatxos",
     "cat_categoria": "POSTRES",
-    "en_nombre": "BROWNIE BITES",
+    "en_nombre": "BROWNIE",
     "en_descripcion": "Brownie with dulce de leche and pistachios.",
     "en_categoria": "DESSERTS",
-    "es_nombre": "BOCADITO BROWNIE",
+    "es_nombre": "BROWNIE",
     "es_descripcion": "Brownie con dulce de leche y pistacho.",
     "es_categoria": "POSTRES",
     "local": "focacceria"
@@ -1560,7 +1560,6 @@ const menu_datos = [
     "local": "bolleria"
   }
 ]
-
 // Filtro por local — usa la columna `local` del dato (focacceria | bolleria | ambos)
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
