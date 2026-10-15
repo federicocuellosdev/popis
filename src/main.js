@@ -161,7 +161,7 @@ const recarga = () => {
 const menu_datos = [
   {
     "id": "POPIS-01",
-    "precio": "12,50",
+    "precio": "12,5",
     "cat_nombre": "LESSEPS",
     "cat_descripcion": "Carn braseada i esfilagarsada - crema de festucs - ceba caramel·litzades.",
     "cat_categoria": "FOCACCIAS AMB CARN",
@@ -175,15 +175,15 @@ const menu_datos = [
   },
   {
     "id": "POPIS-02",
-    "precio": "12,50",
+    "precio": "12,5",
     "cat_nombre": "DEL SOL",
-    "cat_descripcion": "Carn braseada i esfilagarsada - Malbec glacejat - cebes caramel·litzades.",
+    "cat_descripcion": "Carn braseada i esfilagarsada - Malbec glacejat - cebes caramel·litzades. (Suggeriment: Extra de formatge Edam + 2 €)",
     "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "DEL SOL",
-    "en_descripcion": "Braised & pulled beef - Glazed Malbec - caramelized onions.",
+    "en_descripcion": "Braised & pulled beef - Glazed Malbec - caramelized onions. (Suggestion: Extra Edam cheese + €2)",
     "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "DEL SOL",
-    "es_descripcion": "Carne desmechada - Malbec glaseado - cebolla caramelizada.",
+    "es_descripcion": "Carne desmechada - Malbec glaseado - cebolla caramelizada. (Sugerencia: Extra Queso Edam + €2)",
     "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
@@ -203,7 +203,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-04",
-    "precio": "13,50",
+    "precio": "13,5",
     "cat_nombre": "ROVIRA",
     "cat_descripcion": "Carn desfilada - crema de bolets - cebes encurtides - formatge Edam.",
     "cat_categoria": "FOCACCIAS AMB CARN",
@@ -233,13 +233,13 @@ const menu_datos = [
     "id": "POPIS-06",
     "precio": "15",
     "cat_nombre": "CHIMI",
-    "cat_descripcion": "Carn de roast beef - chimichurri - formatge Edam - tomàquet fresc - ruca - ceba cruixent.",
+    "cat_descripcion": "Carn de roast beef - maionesa de chimichurri - formatge Edam - tomàquet fresc - ruca - ceba cruixent.",
     "cat_categoria": "FOCACCIAS AMB CARN",
     "en_nombre": "CHIMI",
-    "en_descripcion": "Roast beef - chimichurri - Edam cheese - fresh tomato - arugula - crispy onions.",
+    "en_descripcion": "Roast beef - chimichurri mayonnaise - Edam cheese - fresh tomato - arugula - crispy onions.",
     "en_categoria": "FOCACCIAS WITH MEET",
     "es_nombre": "CHIMI",
-    "es_descripcion": "Carne roast beef - chimichurri - queso Edam - tomate fresco - rúcula - cebolla crispy",
+    "es_descripcion": "Carne roast beef - mayonesa de chimichurri - queso Edam - tomate fresco - rúcula - cebolla crispy",
     "es_categoria": "FOCACCIAS DE CARNE",
     "local": "focacceria"
   },
@@ -315,7 +315,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-12",
-    "precio": "9,50",
+    "precio": "9,5",
     "cat_nombre": "MOZART",
     "cat_descripcion": "Crema de pesto - pernil dolç - formatge Edam.",
     "cat_categoria": "FOCACCIAS AMB EMBOTITS",
@@ -525,7 +525,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-27",
-    "precio": "2,30",
+    "precio": "2,3",
     "cat_nombre": "AIGUA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES SENSE ALCOHOL",
@@ -567,7 +567,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-30",
-    "precio": "2,90",
+    "precio": "2,9",
     "cat_nombre": "SPRITE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES SENSE ALCOHOL",
@@ -581,7 +581,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-31",
-    "precio": "2,90",
+    "precio": "2,9",
     "cat_nombre": "COCA COLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES SENSE ALCOHOL",
@@ -595,7 +595,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-32",
-    "precio": "2,90",
+    "precio": "2,9",
     "cat_nombre": "COCA COLA ZERO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES SENSE ALCOHOL",
@@ -637,7 +637,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-35",
-    "precio": "2,20",
+    "precio": "2,2",
     "cat_nombre": "CANYETA ESTRELLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES AMB ALCOHOL",
@@ -651,7 +651,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-36",
-    "precio": "2,20",
+    "precio": "2,2",
     "cat_nombre": "CANYETA TURIA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES AMB ALCOHOL",
@@ -693,7 +693,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-39",
-    "precio": "3,30",
+    "precio": "3,3",
     "cat_nombre": "DAMM LEMON",
     "cat_descripcion": "CLARA",
     "cat_categoria": "BEGUDES AMB ALCOHOL",
@@ -721,7 +721,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-41",
-    "precio": "3,20",
+    "precio": "3,2",
     "cat_nombre": "VERMÚ",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES AMB ALCOHOL",
@@ -763,7 +763,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-44",
-    "precio": "3,50",
+    "precio": "3,5",
     "cat_nombre": "COPA VI NEGRE",
     "cat_descripcion": "",
     "cat_categoria": "VI",
@@ -777,7 +777,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-45",
-    "precio": "3,50",
+    "precio": "3,5",
     "cat_nombre": "COPA VIU BLANC",
     "cat_descripcion": "",
     "cat_categoria": "VI",
@@ -791,7 +791,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-46",
-    "precio": "5 \n 25",
+    "precio": "5 | 25",
     "cat_nombre": "FIGA",
     "cat_descripcion": "Garnacha negra 70%, Cariñena",
     "cat_categoria": "VINS NATURALS",
@@ -819,7 +819,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-48",
-    "precio": "4.5 \n 23",
+    "precio": "4.5 | 23",
     "cat_nombre": "OH! BLANCO",
     "cat_descripcion": "Moscatel",
     "cat_categoria": "VINS NATURALS",
@@ -833,7 +833,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-49",
-    "precio": "5 \n 25",
+    "precio": "5 | 25",
     "cat_nombre": "OH! ORANGE",
     "cat_descripcion": "Garnacha Blanca",
     "cat_categoria": "VINS NATURALS",
@@ -847,7 +847,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-50",
-    "precio": "4.5 \n 24",
+    "precio": "4.5 | 24",
     "cat_nombre": "OH! ROJO",
     "cat_descripcion": "Garnacha Negra",
     "cat_categoria": "VINS NATURALS",
@@ -953,7 +953,7 @@ const menu_datos = [
     "en_descripcion": "Poached egg, avocado, cooked ham, classic hummus, beetroot hummus, cherry tomatoes, olives, pickles, arugula and alfalfa sprouts, pesto oil, and seeded bread.",
     "en_categoria": "BREAKFAST - BRUNCH",
     "es_nombre": "NORDIC PLATE - VEGGIE",
-    "es_descripcion": "Huevo poché, aguacate, jamón dulce, hummus clásico, hummus de remolacha, tomates cherry, aceitunas, pepinillos, rúcula con brotes de alfalfa, aceite de pesto y pan de semillas.\nEXTRA HUMMUS 1,5€",
+    "es_descripcion": "Huevo poché, aguacate, jamón dulce, hummus clásico, hummus de remolacha, tomates cherry, aceitunas, pepinillos, rúcula con brotes de alfalfa, aceite de pesto y pan de semillas.",
     "es_categoria": "DESAYUNOS - BRUNCH",
     "local": "bolleria"
   },
@@ -1057,7 +1057,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-65",
-    "precio": "1,90",
+    "precio": "1,9",
     "cat_nombre": "ESPRESSO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1071,7 +1071,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-66",
-    "precio": "2,40",
+    "precio": "2,4",
     "cat_nombre": "ESPRESSO DOBLE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1085,7 +1085,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-67",
-    "precio": "2,40",
+    "precio": "2,4",
     "cat_nombre": "TALLAT",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1099,7 +1099,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-68",
-    "precio": "2,80",
+    "precio": "2,8",
     "cat_nombre": "AMERICANO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1113,7 +1113,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-69",
-    "precio": "2,90",
+    "precio": "2,9",
     "cat_nombre": "LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1127,7 +1127,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-70",
-    "precio": "2,90",
+    "precio": "2,9",
     "cat_nombre": "CAPUCCINO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1141,7 +1141,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-71",
-    "precio": "3,50",
+    "precio": "3,5",
     "cat_nombre": "FLAT WHITE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1155,7 +1155,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-72",
-    "precio": "3,90",
+    "precio": "3,9",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1169,7 +1169,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-73",
-    "precio": "4,40",
+    "precio": "4,4",
     "cat_nombre": "VAINILLA MATCHA LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1183,7 +1183,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-74",
-    "precio": "3,40",
+    "precio": "3,4",
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1197,7 +1197,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-75",
-    "precio": "3,40",
+    "precio": "3,4",
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1211,7 +1211,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-76",
-    "precio": "3,40",
+    "precio": "3,4",
     "cat_nombre": "LATTE DE MOCCA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1225,7 +1225,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-77",
-    "precio": "3,90",
+    "precio": "3,9",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1239,7 +1239,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-78",
-    "precio": "3,90",
+    "precio": "3,9",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1253,7 +1253,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-79",
-    "precio": "4,40",
+    "precio": "4,4",
     "cat_nombre": "DIRTY CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1267,7 +1267,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-80",
-    "precio": "2,40",
+    "precio": "2,4",
     "cat_nombre": "INFUSIÓ",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1281,7 +1281,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-81",
-    "precio": "3,50",
+    "precio": "3,5",
     "cat_nombre": "BATCH BREW",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1295,7 +1295,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-82",
-    "precio": "3,90",
+    "precio": "3,9",
     "cat_nombre": "PURPLE LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1309,7 +1309,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-83",
-    "precio": "3,90",
+    "precio": "3,9",
     "cat_nombre": "PINK LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1323,7 +1323,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-84",
-    "precio": "3,70",
+    "precio": "3,7",
     "cat_nombre": "GOLDEN MILK",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1337,7 +1337,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-85",
-    "precio": "4,50",
+    "precio": "4,5",
     "cat_nombre": "LATTE FRED",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1351,7 +1351,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-86",
-    "precio": "4,80",
+    "precio": "4,8",
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1365,7 +1365,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-87",
-    "precio": "4,80",
+    "precio": "4,8",
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1379,7 +1379,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-88",
-    "precio": "4,80",
+    "precio": "4,8",
     "cat_nombre": "LATTE FRED DE MOCCA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1393,7 +1393,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-89",
-    "precio": "4,50",
+    "precio": "4,5",
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1421,7 +1421,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-91",
-    "precio": "5,00",
+    "precio": "5",
     "cat_nombre": "LATTE FRED DE VAINILLA MATCHA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1435,7 +1435,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-92",
-    "precio": "5,00",
+    "precio": "5",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1449,7 +1449,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-93",
-    "precio": "5,00",
+    "precio": "5",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1463,7 +1463,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-94",
-    "precio": "5,00",
+    "precio": "5",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1477,7 +1477,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-95",
-    "precio": "4,70",
+    "precio": "4,7",
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1491,7 +1491,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-96",
-    "precio": "5,20",
+    "precio": "5,2",
     "cat_nombre": "ICED DIRTY CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1533,7 +1533,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-99",
-    "precio": "4,70",
+    "precio": "4,7",
     "cat_nombre": "ICED GOLDEN MILK",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1547,7 +1547,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-100",
-    "precio": "4,5",
+    "precio": "4",
     "cat_nombre": "COLD BREW",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1559,8 +1559,7 @@ const menu_datos = [
     "es_categoria": "BEBIDAS FRIAS",
     "local": "bolleria"
   }
-]
-// Filtro por local — usa la columna `local` del dato (focacceria | bolleria | ambos)
+]// Filtro por local — usa la columna `local` del dato (focacceria | bolleria | ambos)
 const menu_cargar = () => {
   const params = new URLSearchParams(window.location.search)
   const idioma = params.get('v') || localStorage.getItem('idioma_preferido') || sessionStorage.getItem('idioma') || 'es'
@@ -1646,7 +1645,21 @@ const menu_cargar = () => {
 
         const precio = document.createElement('p')
         precio.className = 'menu_item_precio'
-        precio.textContent = `${item.precio} €`
+        const strPrecio = String(item.precio || '')
+        if (strPrecio.includes('|')) {
+          // Precio dual (vinos): "copa | botella" → "Copa 5€ · Botella 25€"
+          const partes = strPrecio.split('|').map(s => s.trim())
+          const labels = {
+            es: ['Copa', 'Botella'],
+            cat: ['Copa', 'Ampolla'],
+            en: ['Glass', 'Bottle']
+          }
+          const [lblA, lblB] = labels[idioma] || labels.es
+          precio.classList.add('menu_item_precio_dual')
+          precio.innerHTML = `<span>${lblA} ${partes[0]} €</span><span class="precio-sep"> · </span><span>${lblB} ${partes[1]} €</span>`
+        } else {
+          precio.textContent = `${item.precio} €`
+        }
 
         itemP.appendChild(nombre)
         itemP.appendChild(precio)

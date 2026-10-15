@@ -213,6 +213,17 @@ body {
     text-align: right;
 }
 
+/* Precio dual (vinos: copa | botella) — una línea, separador tenue */
+.menu .menu_categoria_item_p .menu_item_precio_dual {
+    width: auto;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+.menu .menu_categoria_item_p .menu_item_precio_dual .precio-sep {
+    opacity: 0.5;
+    margin: 0 4px;
+}
+
 @media (max-width: 567px) {
 
     .menu .menu_categoria_item_p .menu_item_nombre,
