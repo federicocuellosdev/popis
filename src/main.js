@@ -264,7 +264,7 @@ const menu_datos = [
     "cat_descripcion": "Pollastre marinat amb mostassa i mel - aioli - ruca - tomàquet - formatge Edam.",
     "cat_categoria": "FOCACCIAS AMB POLLASTRE",
     "en_nombre": "TRAVESSERA",
-    "en_descripcion": "Honey-mustard marinated chicken - aioli sauce - arugula  - tomato - Edam cheese.",
+    "en_descripcion": "Honey-mustard marinated chicken - aioli sauce - arugula - tomato - Edam cheese.",
     "en_categoria": "FOCACCIAS WITH CHICKEN",
     "es_nombre": "TRAVESSERA",
     "es_descripcion": "Pollo marinado con mostaza y miel - salsa aioli - mix de hojas verdes - tomate fresco - queso Edam.",
@@ -323,7 +323,7 @@ const menu_datos = [
     "en_descripcion": "Pesto Cream - Cooked ham - Edam cheese.",
     "en_categoria": "FOCACCIAS WITH COLD CUTS",
     "es_nombre": "MOZART",
-    "es_descripcion": "Crema de pesto - jamón dulce -queso Edam",
+    "es_descripcion": "Crema de pesto - jamón dulce - queso Edam",
     "es_categoria": "FOCACCIAS DE EMBUTIDOS",
     "local": "focacceria"
   },
@@ -331,10 +331,10 @@ const menu_datos = [
     "id": "POPIS-13",
     "precio": "13",
     "cat_nombre": "RASPALL",
-    "cat_descripcion": "Crema de pesto - stracciatella - tomàquets confitats -  prosciutto - ruca.",
+    "cat_descripcion": "Crema de pesto - stracciatella - tomàquets confitats - prosciutto - ruca.",
     "cat_categoria": "FOCACCIAS AMB EMBOTITS",
     "en_nombre": "RASPALL",
-    "en_descripcion": "Pesto cream - stracciatella - prosciutto - confit tomatoes -arugula.",
+    "en_descripcion": "Pesto cream - stracciatella - prosciutto - confit tomatoes - arugula.",
     "en_categoria": "FOCACCIAS WITH COLD CUTS",
     "es_nombre": "RASPALL",
     "es_descripcion": "Crema de pesto - stracciatella - prosciutto - tomates confitados - rúcula",
@@ -362,7 +362,7 @@ const menu_datos = [
     "cat_descripcion": "Mostassa dolça - peres caramel·litzades amb canyella - nous - ruca (Suggeriment: Extra de formatge Roquefort + 1,50 €)",
     "cat_categoria": "FOCÀCCIES VEGANES",
     "en_nombre": "BONAVISTA",
-    "en_descripcion": "Sweet mustard - cinnamon caramelized pears - walnuts - arugula  (Suggested: Extra Roquefort cheese + €1.50)",
+    "en_descripcion": "Sweet mustard - cinnamon caramelized pears - walnuts - arugula (Suggested: Extra Roquefort cheese + €1.50)",
     "en_categoria": "VEGAN FOCACCIAS",
     "es_nombre": "BONAVISTA",
     "es_descripcion": "Mostaza dulce - peras caramelizadas con canela - nueces - rúcula (Sugerencia: Extra Queso Roquefort + €1,50)",
@@ -407,7 +407,7 @@ const menu_datos = [
     "en_descripcion": "Creamy mushroom sauce - marinated mushrooms - Brie cheese - coleslaw.",
     "en_categoria": "VEGETARIAN FOCACCIAS",
     "es_nombre": "RIERA",
-    "es_descripcion": "Crema de setas - champiñones marinados  - queso brie - coleslaw.",
+    "es_descripcion": "Crema de setas - champiñones marinados - queso brie - coleslaw.",
     "es_categoria": "FOCACCIAS VEGETARIANAS",
     "local": "focacceria"
   },
@@ -416,10 +416,10 @@ const menu_datos = [
     "precio": "3.5",
     "cat_nombre": "OLIVES VERDES",
     "cat_descripcion": "",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "STARTERS",
     "en_nombre": "GREEN OLIVES",
     "en_descripcion": "",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "OLIVAS VERDES",
     "es_descripcion": "",
     "es_categoria": "ENTRANTES",
@@ -430,12 +430,12 @@ const menu_datos = [
     "precio": "5.4",
     "cat_nombre": "HUMMUS CLÀSSIC",
     "cat_descripcion": "Hummus de cigrons amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "STARTERS",
     "en_nombre": "CLASSIC HUMMUS",
     "en_descripcion": "Classic hummus with crispy corn nachos  (Gluten-free)",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "HUMMUS CLÁSICO",
-    "es_descripcion": "Hummus de garbanzos  con crujientes nachos de maiz (Sin gluten).",
+    "es_descripcion": "Hummus de garbanzos con crujientes nachos de maiz (Sin gluten).",
     "es_categoria": "ENTRANTES",
     "local": "focacceria"
   },
@@ -444,10 +444,10 @@ const menu_datos = [
     "precio": "5.9",
     "cat_nombre": "HUMMUS ROSA",
     "cat_descripcion": "Hummus de remolatxa amb nachos de blat de moro cruixents  (Sense gluten)",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "STARTERS",
     "en_nombre": "PINK HUMMUS",
     "en_descripcion": "beet hummus with crispy corn nachos  (Gluten-free).",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "HUMMUS ROSA",
     "es_descripcion": "Hummus de remolacha con crujientes nachos de maiz (Sin gluten).",
     "es_categoria": "ENTRANTES",
@@ -458,10 +458,10 @@ const menu_datos = [
     "precio": "6.5",
     "cat_nombre": "SARDINES EN OLI D´OLIVA",
     "cat_descripcion": "Servides amb torradetes multicereal cruixents.",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "STARTERS",
     "en_nombre": "SARDINES IN OLIVE OIL",
     "en_descripcion": "Served with crispy multigrain toast.",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "SARDINAS EN ACEITE DE OLIVA",
     "es_descripcion": "Servida con tostaditas multicereal cruijientes.",
     "es_categoria": "ENTRANTES",
@@ -472,10 +472,10 @@ const menu_datos = [
     "precio": "7.95",
     "cat_nombre": "STRACCIATELLA ESTIL MEDITERRANI",
     "cat_descripcion": "Servida amb tomáquets confitats i torradetes multicereal cruixents.",
-    "cat_categoria": "ENTRANTS",
+    "cat_categoria": "STARTERS",
     "en_nombre": "MEDITERRANEAN-STYLE STRACCIATELLA",
     "en_descripcion": "Servedwith confit tomatoes and crispy multigrain toast.",
-    "en_categoria": "STARTERS",
+    "en_categoria": "TAPAS",
     "es_nombre": "STRACCIATELLA AL ESTILO MEDITERRÁNEO",
     "es_descripcion": "Acompañada de tomates confitados y tostaditas multicereal.",
     "es_categoria": "ENTRANTES",
@@ -835,13 +835,13 @@ const menu_datos = [
     "id": "POPIS-49",
     "precio": "5 | 25",
     "cat_nombre": "OH! ORANGE",
-    "cat_descripcion": "Garnacha Blanca",
+    "cat_descripcion": "Garnacha Blanca ",
     "cat_categoria": "VINS NATURALS",
     "en_nombre": "OH! ORANGE",
-    "en_descripcion": "Garnacha Blanca",
+    "en_descripcion": "Garnacha Blanca ",
     "en_categoria": "NATURAL WINES",
     "es_nombre": "OH! ORANGE",
-    "es_descripcion": "Garnacha Blanca",
+    "es_descripcion": "Garnacha Blanca ",
     "es_categoria": "VINOS NATURALES",
     "local": "focacceria"
   },
@@ -868,8 +868,8 @@ const menu_datos = [
     "en_nombre": "1R WHITE WINE",
     "en_descripcion": "Cartoixà",
     "en_categoria": "NATURAL WINES",
-    "es_nombre": "1R BLANCO",
-    "es_descripcion": "Cartoixà",
+    "es_nombre": "1R BLANCO ",
+    "es_descripcion": "Cartoixà ",
     "es_categoria": "VINOS NATURALES",
     "local": "focacceria"
   },
@@ -1045,7 +1045,7 @@ const menu_datos = [
     "id": "POPIS-64",
     "precio": "4,5",
     "cat_nombre": "SUC DE TORONJA",
-    "cat_descripcion": "Suc de taronja natural acabat d’esprémer",
+    "cat_descripcion": "Suc de taronja natural acabat d’esprémer ",
     "cat_categoria": "ESMORZARS · BRUNCH",
     "en_nombre": "ORANGE JUICE",
     "en_descripcion": "Freshly squeezed orange juice",
@@ -1155,7 +1155,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-72",
-    "precio": "3,9",
+    "precio": "4,3",
     "cat_nombre": "MATCHA LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1169,7 +1169,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-73",
-    "precio": "4,4",
+    "precio": "4,8",
     "cat_nombre": "VAINILLA MATCHA LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1183,7 +1183,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-74",
-    "precio": "3,4",
+    "precio": "3,6",
     "cat_nombre": "LATTE DE VAINILLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1197,7 +1197,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-75",
-    "precio": "3,4",
+    "precio": "3,6",
     "cat_nombre": "LATTE DE CARAMEL",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1211,7 +1211,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-76",
-    "precio": "3,4",
+    "precio": "3,6",
     "cat_nombre": "LATTE DE MOCCA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1225,7 +1225,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-77",
-    "precio": "3,9",
+    "precio": "4,2",
     "cat_nombre": "XOCOLATA CALENTA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1239,7 +1239,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-78",
-    "precio": "3,9",
+    "precio": "4,5",
     "cat_nombre": "CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1253,7 +1253,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-79",
-    "precio": "4,4",
+    "precio": "5",
     "cat_nombre": "DIRTY CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1281,7 +1281,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-81",
-    "precio": "3,5",
+    "precio": "3,9",
     "cat_nombre": "BATCH BREW",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1295,7 +1295,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-82",
-    "precio": "3,9",
+    "precio": "4,3",
     "cat_nombre": "PURPLE LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1309,7 +1309,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-83",
-    "precio": "3,9",
+    "precio": "4,3",
     "cat_nombre": "PINK LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1323,7 +1323,7 @@ const menu_datos = [
   },
   {
     "id": "POPIS-84",
-    "precio": "3,7",
+    "precio": "4,2",
     "cat_nombre": "GOLDEN MILK",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES CALENTES",
@@ -1351,7 +1351,21 @@ const menu_datos = [
   },
   {
     "id": "POPIS-86",
-    "precio": "4,8",
+    "precio": "3,4",
+    "cat_nombre": "AMERICÀ AMB GEL",
+    "cat_descripcion": "",
+    "cat_categoria": "BEGUDES FREDES",
+    "en_nombre": "ICED AMERICANO",
+    "en_descripcion": "",
+    "en_categoria": "COLD DRINKS",
+    "es_nombre": "ICED AMERICANO",
+    "es_descripcion": "",
+    "es_categoria": "BEBIDAS FRIAS",
+    "local": "bolleria"
+  },
+  {
+    "id": "POPIS-87",
+    "precio": "4,9",
     "cat_nombre": "LATTE FRED DE VAINILLA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1364,8 +1378,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-87",
-    "precio": "4,8",
+    "id": "POPIS-88",
+    "precio": "4,9",
     "cat_nombre": "LATTE FRED DE CARAMEL",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1378,8 +1392,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-88",
-    "precio": "4,8",
+    "id": "POPIS-89",
+    "precio": "4,9",
     "cat_nombre": "LATTE FRED DE MOCCA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1392,8 +1406,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-89",
-    "precio": "4,5",
+    "id": "POPIS-90",
+    "precio": "4,9",
     "cat_nombre": "XOCOLATE FREDA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1406,8 +1420,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-90",
-    "precio": "4.7",
+    "id": "POPIS-91",
+    "precio": "4,9",
     "cat_nombre": "LATTE FRED DE MATCHA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1420,8 +1434,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-91",
-    "precio": "5",
+    "id": "POPIS-92",
+    "precio": "5,4",
     "cat_nombre": "LATTE FRED DE VAINILLA MATCHA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1434,8 +1448,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-92",
-    "precio": "5",
+    "id": "POPIS-93",
+    "precio": "5,4",
     "cat_nombre": "MATCHA FRED DE GRANA",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1448,8 +1462,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-93",
-    "precio": "5",
+    "id": "POPIS-94",
+    "precio": "5,4",
     "cat_nombre": "MATCHA FRED DE MANGO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1462,8 +1476,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-94",
-    "precio": "5",
+    "id": "POPIS-95",
+    "precio": "5,4",
     "cat_nombre": "MATCHA FRED DE COCO",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1476,8 +1490,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-95",
-    "precio": "4,7",
+    "id": "POPIS-96",
+    "precio": "5",
     "cat_nombre": "ICED CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1490,8 +1504,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-96",
-    "precio": "5,2",
+    "id": "POPIS-97",
+    "precio": "5,5",
     "cat_nombre": "ICED DIRTY CHAI LATTE",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1504,7 +1518,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-97",
+    "id": "POPIS-98",
     "precio": "5",
     "cat_nombre": "ICED PURPLE LATTE",
     "cat_descripcion": "",
@@ -1518,7 +1532,7 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-98",
+    "id": "POPIS-99",
     "precio": "5",
     "cat_nombre": "ICED PINK LATTE",
     "cat_descripcion": "",
@@ -1532,8 +1546,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-99",
-    "precio": "4,7",
+    "id": "POPIS-100",
+    "precio": "4,5",
     "cat_nombre": "ICED GOLDEN MILK",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
@@ -1546,8 +1560,8 @@ const menu_datos = [
     "local": "bolleria"
   },
   {
-    "id": "POPIS-100",
-    "precio": "4",
+    "id": "POPIS-101",
+    "precio": "4,5",
     "cat_nombre": "COLD BREW",
     "cat_descripcion": "",
     "cat_categoria": "BEGUDES FREDES",
